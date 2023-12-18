@@ -1,6 +1,8 @@
 ---
 # This test suite is obtained from https://github.com/MurrayIII/UnicodeMathML/blob/main/dist/unicodemathml-integration.js
 # Courtesy of Sargent Murray III.
+last_updated: 2023-12-17T00:00:00Z
+sourced_from: https://github.com/MurrayIII/UnicodeMathML/commit/15e1bf625116e703f0b375f188b6aa43496ddddb
 tests:
 - unicodemath: 0a+b
   mathml: |
