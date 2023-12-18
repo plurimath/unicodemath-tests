@@ -1,0 +1,33 @@
+= UnicodeMath tests
+
+== Purpose
+
+This repository provides tests to validate UnicodeMath to MathML conversion
+functionality.
+
+The source of the tests is the
+https://github.com/MurrayIII/UnicodeMathML/blob/main/dist/unicodemathml-integration.js[unicodemathml-integration.js]
+file from @MurrayIII 's fork of UnicodeMathML.
+
+== Format
+
+[source,yaml]
+----
+tests:
+- unicodemath: 0a+b
+  mathml: |
+    <math display="inline"><mrow><mi>𝑎</mi><mo>+</mo><mi>𝑏</mi></mrow></math>
+  # ...
+----
+
+Where:
+
+`unicodemath`:: is the UnicodeMath string as input.
+
+`mathml`:: is the MathML string as output.
+
+
+== License
+
+The content belongs to its original creators: Sargent Murray III
+and the UnicodeMathML project.
