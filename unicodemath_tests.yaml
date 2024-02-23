@@ -1,8 +1,8 @@
 ---
 # This test suite is obtained from https://github.com/MurrayIII/UnicodeMathML/blob/main/dist/unicodemathml-integration.js
 # Courtesy of Sargent Murray III.
-last_updated: 2023-12-17T00:00:00Z
-sourced_from: https://github.com/MurrayIII/UnicodeMathML/commit/15e1bf625116e703f0b375f188b6aa43496ddddb
+last_updated: 2024-02-23T00:00:00Z
+sourced_from: https://github.com/MurrayIII/UnicodeMathML/blob/main/dist/unicodemathml-integration.js
 tests:
 - unicodemath: 0a+b
   mathml: |
@@ -10,11 +10,11 @@ tests:
 
 - unicodemath: 0lim▒_(n→∞) a_n
   mathml: |
-    <math display="inline"><mrow intent=":function"><msub><mi>lim</mi><mrow><mi>𝑛</mi><mo stretchy="true">→</mo><mi>∞</mi></mrow></msub><mo>&ApplyFunction;</mo><msub><mi>𝑎</mi><mi>𝑛</mi></msub></mrow></math>
+    <math display="inline"><mrow intent=":function"><msub><mi>lim</mi><mrow><mi>𝑛</mi><mo stretchy="true">→</mo><mi>∞</mi></mrow></msub><mo>⁡</mo><msub><mi>𝑎</mi><mi>𝑛</mi></msub></mrow></math>
 
-- unicodemath: 1"A COLLECTION OF 645 UNICODEMATH EXPRESSIONS FROM VARIOUS SOURCES"
+- unicodemath: 1"A COLLECTION OF 669 UNICODEMATH EXPRESSIONS FROM VARIOUS SOURCES"
   mathml: |
-    <math display="block"><mtext>A COLLECTION OF 645 UNICODEMATH EXPRESSIONS FROM VARIOUS SOURCES</mtext></math>
+    <math display="block"><mtext>A COLLECTION OF 669 UNICODEMATH EXPRESSIONS FROM VARIOUS SOURCES</mtext></math>
 
 - unicodemath: 1"So long" ∧ "thanks"   ∀  "🐟🐠🐡".
   mathml: |
@@ -22,7 +22,7 @@ tests:
 
 - unicodemath: 1"hex"={■(0@1@2@3@4@5@6@7@8@9@A@B@C@D@E@F)┤ " with " |"hex"|=16
   mathml: |
-    <math display="block"><mrow><mtext>hex</mtext><mo>=</mo><mrow intent=":fenced"><mo>{</mo><mtable intent="matrix"><mtr><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>3</mn></mtd></mtr><mtr><mtd><mn>4</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd></mtr><mtr><mtd><mn>6</mn></mtd></mtr><mtr><mtd><mn>7</mn></mtd></mtr><mtr><mtd><mn>8</mn></mtd></mtr><mtr><mtd><mn>9</mn></mtd></mtr><mtr><mtd><mi>𝐴</mi></mtd></mtr><mtr><mtd><mi>𝐵</mi></mtd></mtr><mtr><mtd><mi>𝐶</mi></mtd></mtr><mtr><mtd><mi>𝐷</mi></mtd></mtr><mtr><mtd><mi>𝐸</mi></mtd></mtr><mtr><mtd><mi>𝐹</mi></mtd></mtr></mtable><mo></mo></mrow><mtext> with </mtext><mrow intent=":fenced"><mo>|</mo><mtext>hex</mtext><mo>|</mo></mrow><mo>=</mo><mn>16</mn></mrow></math>
+    <math display="block"><mrow><mtext>hex</mtext><mo>=</mo><mrow intent=":fenced"><mo>{</mo><mtable intent=":matrix(16,1)"><mtr><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>3</mn></mtd></mtr><mtr><mtd><mn>4</mn></mtd></mtr><mtr><mtd><mn>5</mn></mtd></mtr><mtr><mtd><mn>6</mn></mtd></mtr><mtr><mtd><mn>7</mn></mtd></mtr><mtr><mtd><mn>8</mn></mtd></mtr><mtr><mtd><mn>9</mn></mtd></mtr><mtr><mtd><mi>𝐴</mi></mtd></mtr><mtr><mtd><mi>𝐵</mi></mtd></mtr><mtr><mtd><mi>𝐶</mi></mtd></mtr><mtr><mtd><mi>𝐷</mi></mtd></mtr><mtr><mtd><mi>𝐸</mi></mtd></mtr><mtr><mtd><mi>𝐹</mi></mtd></mtr></mtable><mo></mo></mrow><mtext> with </mtext><mrow intent=":fenced"><mo>|</mo><mtext>hex</mtext><mo>|</mo></mrow><mo>=</mo><mn>16</mn></mrow></math>
 
 - unicodemath: 1"rate" = "distance"/"time".
   mathml: |
@@ -82,11 +82,11 @@ tests:
 
 - unicodemath: 1(a + b)^n = ∑1_(k=0)^n▒(n¦k) a^k b^(n-k)
   mathml: |
-    <math display="block"><mrow><msup><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑎</mi><mo>+</mo><mi>𝑏</mi></mrow><mo>)</mo></mrow><mi>𝑛</mi></msup><mo>=</mo><mrow intent="sum($l,𝑛,$n)"><munderover><mo>∑</mo><mrow arg="l"><mi>𝑘</mi><mo>=</mo><mn>0</mn></mrow><mi>𝑛</mi></munderover><mrow arg="n"><mrow intent=":fenced"><mo>(</mo><mfrac linethickness="0"><mi>𝑛</mi><mi>𝑘</mi></mfrac><mo>)</mo></mrow></mrow></mrow><mrow><msup><mi>𝑎</mi><mi>𝑘</mi></msup><msup><mi>𝑏</mi><mrow><mi>𝑛</mi><mo>−</mo><mi>𝑘</mi></mrow></msup></mrow></mrow></math>
+    <math display="block"><mrow><msup><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑎</mi><mo>+</mo><mi>𝑏</mi></mrow><mo>)</mo></mrow><mi>𝑛</mi></msup><mo>=</mo><mrow intent=":sum($l,𝑛,$n)"><munderover><mo>∑</mo><mrow arg="l"><mi>𝑘</mi><mo>=</mo><mn>0</mn></mrow><mi>𝑛</mi></munderover><mrow arg="n"><mrow intent=":fenced"><mo>(</mo><mfrac linethickness="0"><mi>𝑛</mi><mi>𝑘</mi></mfrac><mo>)</mo></mrow></mrow></mrow><mrow><msup><mi>𝑎</mi><mi>𝑘</mi></msup><msup><mi>𝑏</mi><mrow><mi>𝑛</mi><mo>−</mo><mi>𝑘</mi></mrow></msup></mrow></mrow></math>
 
 - unicodemath: 1(a + b)^n = ∑_(k=0)^n▒(n¦k) a^k b^(n-k)
   mathml: |
-    <math display="block"><mrow><msup><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑎</mi><mo>+</mo><mi>𝑏</mi></mrow><mo>)</mo></mrow><mi>𝑛</mi></msup><mo>=</mo><mrow intent="sum($l,𝑛,$n)"><munderover><mo>∑</mo><mrow arg="l"><mi>𝑘</mi><mo>=</mo><mn>0</mn></mrow><mi>𝑛</mi></munderover><mrow arg="n"><mrow intent=":fenced"><mo>(</mo><mfrac linethickness="0"><mi>𝑛</mi><mi>𝑘</mi></mfrac><mo>)</mo></mrow></mrow></mrow><mrow><msup><mi>𝑎</mi><mi>𝑘</mi></msup><msup><mi>𝑏</mi><mrow><mi>𝑛</mi><mo>−</mo><mi>𝑘</mi></mrow></msup></mrow></mrow></math>
+    <math display="block"><mrow><msup><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑎</mi><mo>+</mo><mi>𝑏</mi></mrow><mo>)</mo></mrow><mi>𝑛</mi></msup><mo>=</mo><mrow intent=":sum($l,𝑛,$n)"><munderover><mo>∑</mo><mrow arg="l"><mi>𝑘</mi><mo>=</mo><mn>0</mn></mrow><mi>𝑛</mi></munderover><mrow arg="n"><mrow intent=":fenced"><mo>(</mo><mfrac linethickness="0"><mi>𝑛</mi><mi>𝑘</mi></mfrac><mo>)</mo></mrow></mrow></mrow><mrow><msup><mi>𝑎</mi><mi>𝑘</mi></msup><msup><mi>𝑏</mi><mrow><mi>𝑛</mi><mo>−</mo><mi>𝑘</mi></mrow></msup></mrow></mrow></math>
 
 - unicodemath: 1(a + b)┴→
   mathml: |
@@ -134,8 +134,11 @@ tests:
 
 - unicodemath: 1(a│b)/
   mathml: |
-    <math display="block"><mrow><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑎</mi><mo>│</mo><mi>𝑏</mi></mrow><mo>)</mo></mrow><mstyle mathcolor="#F00"><mo>/</mo></mstyle></mrow></math>",
-    "1("pizza"^🍕)^🍕":  "<math display="block"><msup><mrow intent=":fenced"><mo>(</mo><msup><mtext>pizza</mtext><mi>🍕</mi></msup><mo>)</mo></mrow><mi>🍕</mi></msup></math>
+    <math display="block"><mrow><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑎</mi><mo>│</mo><mi>𝑏</mi></mrow><mo>)</mo></mrow><mo mathcolor="#F00">/</mo></mrow></math>
+
+- unicodemath: 1("pizza"^🍕)^🍕
+  mathml: |
+    <math display="block"><msup><mrow intent=":fenced"><mo>(</mo><msup><mtext>pizza</mtext><mi>🍕</mi></msup><mo>)</mo></mrow><mi>🍕</mi></msup></math>
 
 - unicodemath: 1("potter")͛
   mathml: |
@@ -171,15 +174,19 @@ tests:
 
 - unicodemath: 1(■(1&2&3@4&5&6@7&8&9@10)).
   mathml: |
-    <math display="block"><mrow><mrow intent=":fenced"><mo>(</mo><mtable intent="matrix"><mtr><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>3</mn></mtd></mtr><mtr><mtd><mn>4</mn></mtd><mtd><mn>5</mn></mtd><mtd><mn>6</mn></mtd></mtr><mtr><mtd><mn>7</mn></mtd><mtd><mn>8</mn></mtd><mtd><mn>9</mn></mtd></mtr><mtr><mtd><mn>10</mn></mtd></mtr></mtable><mo>)</mo></mrow><mo>.</mo></mrow></math>
+    <math display="block"><mrow><mrow intent=":fenced"><mo>(</mo><mtable intent=":matrix(4,3)"><mtr><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>3</mn></mtd></mtr><mtr><mtd><mn>4</mn></mtd><mtd><mn>5</mn></mtd><mtd><mn>6</mn></mtd></mtr><mtr><mtd><mn>7</mn></mtd><mtd><mn>8</mn></mtd><mtd><mn>9</mn></mtd></mtr><mtr><mtd><mn>10</mn></mtd></mtr></mtable><mo>)</mo></mrow><mo>.</mo></mrow></math>
 
 - unicodemath: 1(■(a&b@c&d))
   mathml: |
-    <math display="block"><mrow intent=":fenced"><mo>(</mo><mtable intent="matrix"><mtr><mtd><mi>𝑎</mi></mtd><mtd><mi>𝑏</mi></mtd></mtr><mtr><mtd><mi>𝑐</mi></mtd><mtd><mi>𝑑</mi></mtd></mtr></mtable><mo>)</mo></mrow></math>
+    <math display="block"><mrow intent=":fenced"><mo>(</mo><mtable intent=":matrix(2,2)"><mtr><mtd><mi>𝑎</mi></mtd><mtd><mi>𝑏</mi></mtd></mtr><mtr><mtd><mi>𝑐</mi></mtd><mtd><mi>𝑑</mi></mtd></mtr></mtable><mo>)</mo></mrow></math>
 
 - unicodemath: 1(𝑎 + 𝑏)┴→┬→
   mathml: |
     <math display="block"><munderover><mrow><mi>𝑎</mi><mo>+</mo><mi>𝑏</mi></mrow><mo stretchy="true">→</mo><mo stretchy="true">→</mo></munderover></math>
+
+- unicodemath: 1(𝑘−𝑧−1)⒞𝑘
+  mathml: |
+    <math display="block"><mrow intent="binomial-coefficient($t,𝑘)"><mo>(</mo><mfrac linethickness="0"><mrow arg="t"><mi>𝑘</mi><mo>−</mo><mi>𝑧</mi><mo>−</mo><mn>1</mn></mrow><mi>𝑘</mi></mfrac><mo>)</mo></mrow></math>
 
 - unicodemath: 1+
   mathml: |
@@ -233,7 +240,7 @@ tests:
   mathml: |
     <math display="block"><mrow><mo>+</mo><mrow intent=":fenced"><mo>(</mo><mrow><mrow><msub><mi>𝛼</mi><mi>𝑦</mi></msub><msub><mi>𝛽</mi><mi>𝑧</mi></msub></mrow><mo>−</mo><mrow><msub><mi>𝛼</mi><mi>𝑥</mi></msub><msub><mi>𝛽</mi><mi>𝑦</mi></msub></mrow></mrow><mo>)</mo></mrow><mi>𝑦</mi><mi>𝑧</mi></mrow></math>
 
-- unicodemath: "1+ : 𝒢 × 𝒢 → 𝒢"
+- unicodemath: 1+ : 𝒢 × 𝒢 → 𝒢
   mathml: |
     <math display="block"><mrow><mo>+</mo><mo>:</mo><mi>𝒢</mi><mo>×</mo><mi>𝒢</mi><mo stretchy="true">→</mo><mi>𝒢</mi></mrow></math>
 
@@ -555,7 +562,7 @@ tests:
 
 - unicodemath: 1= \\(α_1 + α_x x + α_y y + α_x z +
   mathml: |
-    <math display="block"><mrow><mo>=</mo><msub><mrow><mo>(</mo><mi>𝛼</mi></mrow><mn>1</mn></msub><mo>+</mo><mrow><msub><mi>𝛼</mi><mi>𝑥</mi></msub><mi>𝑥</mi></mrow><mo>+</mo><mrow><msub><mi>𝛼</mi><mi>𝑦</mi></msub><mi>𝑦</mi></mrow><mo>+</mo><mrow><msub><mi>𝛼</mi><mi>𝑥</mi></msub><mi>𝑧</mi></mrow><mo>+</mo></mrow></math>
+    <math display="block"><mrow><mo>=</mo><mrow><mo>(</mo><msub><mi>𝛼</mi><mn>1</mn></msub></mrow><mo>+</mo><mrow><msub><mi>𝛼</mi><mi>𝑥</mi></msub><mi>𝑥</mi></mrow><mo>+</mo><mrow><msub><mi>𝛼</mi><mi>𝑦</mi></msub><mi>𝑦</mi></mrow><mo>+</mo><mrow><msub><mi>𝛼</mi><mi>𝑥</mi></msub><mi>𝑧</mi></mrow><mo>+</mo></mrow></math>
 
 - unicodemath: 1= α_1 + α_(y z) yz + α_(z x) z x + α_(x y) x y + α_(x y z) x y z
   mathml: |
@@ -663,11 +670,11 @@ tests:
 
 - unicodemath: 1I(x,x') = g(x,x') [ε(x,x') + ∫_S▒ρ(x,x',x'')I(x',x'')ⅆx'']
   mathml: |
-    <math display="block"><mrow><mrow><mi>𝐼</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><msup><mi>𝑥</mi><mo>′</mo></msup></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi>𝑔</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><msup><mi>𝑥</mi><mo>′</mo></msup></mrow><mo>)</mo></mrow></mrow><mrow intent=":fenced"><mo>[</mo><mrow><mrow><mi>𝜀</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><msup><mi>𝑥</mi><mo>′</mo></msup></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow intent="integral(𝑆,,$n)"><msub><mo>∫</mo><mi>𝑆</mi></msub><mrow arg="n"><mi>𝜌</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><msup><mi>𝑥</mi><mo>′</mo></msup><mo>,</mo><msup><mi>𝑥</mi><mo>″</mo></msup></mrow><mo>)</mo></mrow><mi>𝐼</mi><mrow intent=":fenced"><mo>(</mo><mrow><msup><mi>𝑥</mi><mo>′</mo></msup><mo>,</mo><msup><mi>𝑥</mi><mo>″</mo></msup></mrow><mo>)</mo></mrow><msup><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow><mo>″</mo></msup></mrow></mrow></mrow><mo>]</mo></mrow></mrow></math>
+    <math display="block"><mrow><mrow><mi>𝐼</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><msup><mi>𝑥</mi><mo>′</mo></msup></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi>𝑔</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><msup><mi>𝑥</mi><mo>′</mo></msup></mrow><mo>)</mo></mrow></mrow><mrow intent=":fenced"><mo>[</mo><mrow><mrow><mi>𝜀</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><msup><mi>𝑥</mi><mo>′</mo></msup></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow intent=":integral(𝑆,,$n)"><msub><mo>∫</mo><mi>𝑆</mi></msub><mrow arg="n"><mi>𝜌</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><msup><mi>𝑥</mi><mo>′</mo></msup><mo>,</mo><msup><mi>𝑥</mi><mo>″</mo></msup></mrow><mo>)</mo></mrow><mi>𝐼</mi><mrow intent=":fenced"><mo>(</mo><mrow><msup><mi>𝑥</mi><mo>′</mo></msup><mo>,</mo><msup><mi>𝑥</mi><mo>″</mo></msup></mrow><mo>)</mo></mrow><mrow><mi intent="ⅆ">𝑑</mi><msup><mi>𝑥</mi><mo>″</mo></msup></mrow></mrow></mrow></mrow><mo>]</mo></mrow></mrow></math>
 
 - unicodemath: 1K_c (r) = 𝟏_[¼,¾] (r) + ½ × 𝟏_[0,¼] (r)
   mathml: |
-    <math display="block"><mrow><mrow><msub><mi>𝐾</mi><mi>𝑐</mi></msub><mrow intent=":fenced"><mo>(</mo><mi>𝑟</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>𝟏</mi><mrow intent=":fenced"><mo>[</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle><mo>,</mo><mstyle displaystyle="false"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle></mrow><mo>]</mo></mrow></msub><mrow intent=":fenced"><mo>(</mo><mi>𝑟</mi><mo>)</mo></mrow></mrow><mo>+</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>×</mo><mrow><msub><mi>𝟏</mi><mrow intent=":fenced"><mo>[</mo><mrow><mn>0</mn><mo>,</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle></mrow><mo>]</mo></mrow></msub><mrow intent=":fenced"><mo>(</mo><mi>𝑟</mi><mo>)</mo></mrow></mrow></mrow></math>
+    <math display="block"><mrow><mrow><msub><mi>𝐾</mi><mi>𝑐</mi></msub><mrow intent=":fenced"><mo>(</mo><mi>𝑟</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>𝟏</mi><mrow intent=":fenced"><mo>[</mo><mrow><mfrac displaystyle="false"><mn>1</mn><mn>4</mn></mfrac><mo>,</mo><mfrac displaystyle="false"><mn>3</mn><mn>4</mn></mfrac></mrow><mo>]</mo></mrow></msub><mrow intent=":fenced"><mo>(</mo><mi>𝑟</mi><mo>)</mo></mrow></mrow><mo>+</mo><mfrac displaystyle="false"><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mrow><msub><mi>𝟏</mi><mrow intent=":fenced"><mo>[</mo><mrow><mn>0</mn><mo>,</mo><mfrac displaystyle="false"><mn>1</mn><mn>4</mn></mfrac></mrow><mo>]</mo></mrow></msub><mrow intent=":fenced"><mo>(</mo><mi>𝑟</mi><mo>)</mo></mrow></mrow></mrow></math>
 
 - unicodemath: 1M = α_1 + α_x x + α_y y + α_x z +
   mathml: |
@@ -699,11 +706,11 @@ tests:
 
 - unicodemath: 1W_δ₁ρ₁σ₂^3β=U_δ₁ρ₁^3β+1/8π^2⁢∫_α₁^α₂▒dα'₂[(U_δ₁ρ₁^2β-α'₂U_δ₁ρ₁^1β)/U_δ₁ρ₁^0β]
   mathml: |
-    <math display="block"><mrow><msubsup><mi>𝑊</mi><mrow><msub><mi>𝛿</mi><mn>1</mn></msub><msub><mi>𝜌</mi><mn>1</mn></msub><msub><mi>𝜎</mi><mn>2</mn></msub></mrow><mrow><mn>3</mn><mi>𝛽</mi></mrow></msubsup><mo>=</mo><msubsup><mi>𝑈</mi><mrow><msub><mi>𝛿</mi><mn>1</mn></msub><msub><mi>𝜌</mi><mn>1</mn></msub></mrow><mrow><mn>3</mn><mi>𝛽</mi></mrow></msubsup><mo>+</mo><mfrac><mn>1</mn><mrow><mn>8</mn><msup><mi>𝜋</mi><mn>2</mn></msup></mrow></mfrac><mo>⁢</mo><mrow intent="integral($l,$h,$n)"><msubsup><mo>∫</mo><mrow arg="l"><msub><mi>𝛼</mi><mn>1</mn></msub></mrow><mrow arg="h"><msub><mi>𝛼</mi><mn>2</mn></msub></mrow></msubsup><mrow arg="n"><mrow><mi>𝑑</mi><msubsup><mi>𝛼</mi><mn>2</mn><mo>′</mo></msubsup></mrow><mrow intent=":fenced"><mo>[</mo><mfrac><mrow><msubsup><mi>𝑈</mi><mrow><msub><mi>𝛿</mi><mn>1</mn></msub><msub><mi>𝜌</mi><mn>1</mn></msub></mrow><mrow><mn>2</mn><mi>𝛽</mi></mrow></msubsup><mo>−</mo><mrow><msubsup><mi>𝛼</mi><mn>2</mn><mo>′</mo></msubsup><msubsup><mi>𝑈</mi><mrow><msub><mi>𝛿</mi><mn>1</mn></msub><msub><mi>𝜌</mi><mn>1</mn></msub></mrow><mrow><mn>1</mn><mi>𝛽</mi></mrow></msubsup></mrow></mrow><msubsup><mi>𝑈</mi><mrow><msub><mi>𝛿</mi><mn>1</mn></msub><msub><mi>𝜌</mi><mn>1</mn></msub></mrow><mrow><mn>0</mn><mi>𝛽</mi></mrow></msubsup></mfrac><mo>]</mo></mrow></mrow></mrow></mrow></math>
+    <math display="block"><mrow><msubsup><mi>𝑊</mi><mrow><msub><mi>𝛿</mi><mn>1</mn></msub><msub><mi>𝜌</mi><mn>1</mn></msub><msub><mi>𝜎</mi><mn>2</mn></msub></mrow><mrow><mn>3</mn><mi>𝛽</mi></mrow></msubsup><mo>=</mo><msubsup><mi>𝑈</mi><mrow><msub><mi>𝛿</mi><mn>1</mn></msub><msub><mi>𝜌</mi><mn>1</mn></msub></mrow><mrow><mn>3</mn><mi>𝛽</mi></mrow></msubsup><mo>+</mo><mfrac><mn>1</mn><mrow><mn>8</mn><msup><mi>𝜋</mi><mn>2</mn></msup></mrow></mfrac><mo>⁢</mo><mrow intent=":integral($l,$h,$n)"><msubsup><mo>∫</mo><mrow arg="l"><msub><mi>𝛼</mi><mn>1</mn></msub></mrow><mrow arg="h"><msub><mi>𝛼</mi><mn>2</mn></msub></mrow></msubsup><mrow arg="n"><mrow><mi>𝑑</mi><msubsup><mi>𝛼</mi><mn>2</mn><mo>′</mo></msubsup></mrow><mrow intent=":fenced"><mo>[</mo><mfrac><mrow><msubsup><mi>𝑈</mi><mrow><msub><mi>𝛿</mi><mn>1</mn></msub><msub><mi>𝜌</mi><mn>1</mn></msub></mrow><mrow><mn>2</mn><mi>𝛽</mi></mrow></msubsup><mo>−</mo><mrow><msubsup><mi>𝛼</mi><mn>2</mn><mo>′</mo></msubsup><msubsup><mi>𝑈</mi><mrow><msub><mi>𝛿</mi><mn>1</mn></msub><msub><mi>𝜌</mi><mn>1</mn></msub></mrow><mrow><mn>1</mn><mi>𝛽</mi></mrow></msubsup></mrow></mrow><msubsup><mi>𝑈</mi><mrow><msub><mi>𝛿</mi><mn>1</mn></msub><msub><mi>𝜌</mi><mn>1</mn></msub></mrow><mrow><mn>0</mn><mi>𝛽</mi></mrow></msubsup></mfrac><mo>]</mo></mrow></mrow></mrow></mrow></math>
 
 - unicodemath: 1W_δ₁ρ₁σ₂^3β=U_δ₁ρ₁^3β+1/8π^2⁢∫_α₁^α₂▒dα'₂[(U_δ₁ρ₁^2β-α'₂U_ρ₁σ₂^1β)/U_ρ₁σ₂^0β]
   mathml: |
-    <math display="block"><mrow><msubsup><mi>𝑊</mi><mrow><msub><mi>𝛿</mi><mn>1</mn></msub><msub><mi>𝜌</mi><mn>1</mn></msub><msub><mi>𝜎</mi><mn>2</mn></msub></mrow><mrow><mn>3</mn><mi>𝛽</mi></mrow></msubsup><mo>=</mo><msubsup><mi>𝑈</mi><mrow><msub><mi>𝛿</mi><mn>1</mn></msub><msub><mi>𝜌</mi><mn>1</mn></msub></mrow><mrow><mn>3</mn><mi>𝛽</mi></mrow></msubsup><mo>+</mo><mfrac><mn>1</mn><mrow><mn>8</mn><msup><mi>𝜋</mi><mn>2</mn></msup></mrow></mfrac><mo>⁢</mo><mrow intent="integral($l,$h,$n)"><msubsup><mo>∫</mo><mrow arg="l"><msub><mi>𝛼</mi><mn>1</mn></msub></mrow><mrow arg="h"><msub><mi>𝛼</mi><mn>2</mn></msub></mrow></msubsup><mrow arg="n"><mrow><mi>𝑑</mi><msubsup><mi>𝛼</mi><mn>2</mn><mo>′</mo></msubsup></mrow><mrow intent=":fenced"><mo>[</mo><mfrac><mrow><msubsup><mi>𝑈</mi><mrow><msub><mi>𝛿</mi><mn>1</mn></msub><msub><mi>𝜌</mi><mn>1</mn></msub></mrow><mrow><mn>2</mn><mi>𝛽</mi></mrow></msubsup><mo>−</mo><mrow><msubsup><mi>𝛼</mi><mn>2</mn><mo>′</mo></msubsup><msubsup><mi>𝑈</mi><mrow><msub><mi>𝜌</mi><mn>1</mn></msub><msub><mi>𝜎</mi><mn>2</mn></msub></mrow><mrow><mn>1</mn><mi>𝛽</mi></mrow></msubsup></mrow></mrow><msubsup><mi>𝑈</mi><mrow><msub><mi>𝜌</mi><mn>1</mn></msub><msub><mi>𝜎</mi><mn>2</mn></msub></mrow><mrow><mn>0</mn><mi>𝛽</mi></mrow></msubsup></mfrac><mo>]</mo></mrow></mrow></mrow></mrow></math>
+    <math display="block"><mrow><msubsup><mi>𝑊</mi><mrow><msub><mi>𝛿</mi><mn>1</mn></msub><msub><mi>𝜌</mi><mn>1</mn></msub><msub><mi>𝜎</mi><mn>2</mn></msub></mrow><mrow><mn>3</mn><mi>𝛽</mi></mrow></msubsup><mo>=</mo><msubsup><mi>𝑈</mi><mrow><msub><mi>𝛿</mi><mn>1</mn></msub><msub><mi>𝜌</mi><mn>1</mn></msub></mrow><mrow><mn>3</mn><mi>𝛽</mi></mrow></msubsup><mo>+</mo><mfrac><mn>1</mn><mrow><mn>8</mn><msup><mi>𝜋</mi><mn>2</mn></msup></mrow></mfrac><mo>⁢</mo><mrow intent=":integral($l,$h,$n)"><msubsup><mo>∫</mo><mrow arg="l"><msub><mi>𝛼</mi><mn>1</mn></msub></mrow><mrow arg="h"><msub><mi>𝛼</mi><mn>2</mn></msub></mrow></msubsup><mrow arg="n"><mrow><mi>𝑑</mi><msubsup><mi>𝛼</mi><mn>2</mn><mo>′</mo></msubsup></mrow><mrow intent=":fenced"><mo>[</mo><mfrac><mrow><msubsup><mi>𝑈</mi><mrow><msub><mi>𝛿</mi><mn>1</mn></msub><msub><mi>𝜌</mi><mn>1</mn></msub></mrow><mrow><mn>2</mn><mi>𝛽</mi></mrow></msubsup><mo>−</mo><mrow><msubsup><mi>𝛼</mi><mn>2</mn><mo>′</mo></msubsup><msubsup><mi>𝑈</mi><mrow><msub><mi>𝜌</mi><mn>1</mn></msub><msub><mi>𝜎</mi><mn>2</mn></msub></mrow><mrow><mn>1</mn><mi>𝛽</mi></mrow></msubsup></mrow></mrow><msubsup><mi>𝑈</mi><mrow><msub><mi>𝜌</mi><mn>1</mn></msub><msub><mi>𝜎</mi><mn>2</mn></msub></mrow><mrow><mn>0</mn><mi>𝛽</mi></mrow></msubsup></mfrac><mo>]</mo></mrow></mrow></mrow></mrow></math>
 
 - unicodemath: 1[(𝑥₁, 𝑦₁), (𝑥₂, 𝑦₂), ⋯]
   mathml: |
@@ -715,7 +722,7 @@ tests:
 
 - unicodemath: 1[■(α&β@γ&δ)]
   mathml: |
-    <math display="block"><mrow intent=":fenced"><mo>[</mo><mtable intent="matrix"><mtr><mtd><mi>𝛼</mi></mtd><mtd><mi>𝛽</mi></mtd></mtr><mtr><mtd><mi>𝛾</mi></mtd><mtd><mi>𝛿</mi></mtd></mtr></mtable><mo>]</mo></mrow></math>
+    <math display="block"><mrow intent=":fenced"><mo>[</mo><mtable intent=":matrix(2,2)"><mtr><mtd><mi>𝛼</mi></mtd><mtd><mi>𝛽</mi></mtd></mtr><mtr><mtd><mi>𝛾</mi></mtd><mtd><mi>𝛿</mi></mtd></mtr></mtable><mo>]</mo></mrow></math>
 
 - unicodemath: 1"test"+(_n^m)(1,2)_n^m
   mathml: |
@@ -727,15 +734,15 @@ tests:
 
 - unicodemath: 1\\(β_1 + β_x x + β_y y + β_z z +
   mathml: |
-    <math display="block"><mrow><msub><mrow><mo>(</mo><mi>𝛽</mi></mrow><mn>1</mn></msub><mo>+</mo><mrow><msub><mi>𝛽</mi><mi>𝑥</mi></msub><mi>𝑥</mi></mrow><mo>+</mo><mrow><msub><mi>𝛽</mi><mi>𝑦</mi></msub><mi>𝑦</mi></mrow><mo>+</mo><mrow><msub><mi>𝛽</mi><mi>𝑧</mi></msub><mi>𝑧</mi></mrow><mo>+</mo></mrow></math>
+    <math display="block"><mrow><mrow><mo>(</mo><msub><mi>𝛽</mi><mn>1</mn></msub></mrow><mo>+</mo><mrow><msub><mi>𝛽</mi><mi>𝑥</mi></msub><mi>𝑥</mi></mrow><mo>+</mo><mrow><msub><mi>𝛽</mi><mi>𝑦</mi></msub><mi>𝑦</mi></mrow><mo>+</mo><mrow><msub><mi>𝛽</mi><mi>𝑧</mi></msub><mi>𝑧</mi></mrow><mo>+</mo></mrow></math>
 
 - unicodemath: 1\\int\\of a
   mathml: |
-    <math display="block"><mrow intent="integral(,,$n)"><mo>∫</mo><mrow arg="n"><mi>𝑎</mi></mrow></mrow></math>
+    <math display="block"><mrow intent=":integral(,,$n)"><mo>∫</mo><mrow arg="n"><mi>𝑎</mi></mrow></mrow></math>
 
 - unicodemath: 1\\int_0^a xⅆx/(x²+a²)
   mathml: |
-    <math display="block"><mrow intent="integral(0,𝑎,$n)"><msubsup><mo>∫</mo><mn>0</mn><mi>𝑎</mi></msubsup><mfrac arg="n"><mrow><mi>𝑥</mi><mi> </mi><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow><mrow><msup><mi>𝑥</mi><mn>2</mn></msup><mo>+</mo><msup><mi>𝑎</mi><mn>2</mn></msup></mrow></mfrac></mrow></math>
+    <math display="block"><mrow intent=":integral(0,𝑎,$n)"><msubsup><mo>∫</mo><mn>0</mn><mi>𝑎</mi></msubsup><mfrac arg="n"><mrow><mi>𝑥</mi><mi> </mi><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow><mrow><msup><mi>𝑥</mi><mn>2</mn></msup><mo>+</mo><msup><mi>𝑎</mi><mn>2</mn></msup></mrow></mfrac></mrow></math>
 
 - unicodemath: 1\\mitBbbd\\equiv\\dd
   mathml: |
@@ -767,21 +774,21 @@ tests:
 
 - unicodemath: 1\\sum_1\\of\\alpha
   mathml: |
-    <math display="block"><mrow intent="sum(1,,$n)"><munder><mo>∑</mo><mn>1</mn></munder><mrow arg="n"><mi>𝛼</mi></mrow></mrow></math>
+    <math display="block"><mrow intent=":sum(1,,$n)"><munder><mo>∑</mo><mn>1</mn></munder><mrow arg="n"><mi>𝛼</mi></mrow></mrow></math>
 
 - unicodemath: 1\\sum┬k▒(-1)^k z_k f(t-k) ℲB\\/ \\sum┬k▒(-1)^k f(t-k)
   mathml: |
-    <math display="block"><mrow><mrow intent="sum(𝑘,,$n)"><munder><mo>∑</mo><mi>𝑘</mi></munder><mrow arg="n"><msup><mrow intent=":fenced"><mo>(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow><mi>𝑘</mi></msup><msub><mi>𝑧</mi><mi>𝑘</mi></msub><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑡</mi><mo>−</mo><mi>𝑘</mi></mrow><mo>)</mo></mrow></mrow></mrow><mrow><mi>ℲB</mi><mo>/</mo></mrow><mrow intent="sum(𝑘,,$n)"><munder><mo>∑</mo><mi>𝑘</mi></munder><mrow arg="n"><msup><mrow intent=":fenced"><mo>(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow><mi>𝑘</mi></msup><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑡</mi><mo>−</mo><mi>𝑘</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow></math>
+    <math display="block"><mrow><mrow intent=":sum(𝑘,,$n)"><munder><mo>∑</mo><mi>𝑘</mi></munder><mrow arg="n"><msup><mrow intent=":fenced"><mo>(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow><mi>𝑘</mi></msup><msub><mi>𝑧</mi><mi>𝑘</mi></msub><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑡</mi><mo>−</mo><mi>𝑘</mi></mrow><mo>)</mo></mrow></mrow></mrow><mrow><mi>ℲB</mi><mo>/</mo></mrow><mrow intent=":sum(𝑘,,$n)"><munder><mo>∑</mo><mi>𝑘</mi></munder><mrow arg="n"><msup><mrow intent=":fenced"><mo>(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow><mi>𝑘</mi></msup><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑡</mi><mo>−</mo><mi>𝑘</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow></math>
 
 - unicodemath: 1\\xcancel(a)\\rect(207&a+b)\\rect(a+b)\\cancel(f+g)\\bcancel(u+i)
   mathml: |
     <math display="block"><mrow><menclose notation="updiagonalstrike downdiagonalstrike"><mi>𝑎</mi></menclose><menclose notation="updiagonalstrike downdiagonalstrike"><mrow><mi>𝑎</mi><mo>+</mo><mi>𝑏</mi></mrow></menclose><menclose notation="box"><mrow><mi>𝑎</mi><mo>+</mo><mi>𝑏</mi></mrow></menclose><menclose notation="downdiagonalstrike"><mrow><mi>𝑓</mi><mo>+</mo><mi>𝑔</mi></mrow></menclose><menclose notation="updiagonalstrike"><mrow><mi>𝑢</mi><mo>+</mo><mi>𝑖</mi></mrow></menclose></mrow></math>
 
-- unicodemath: "1\\⌊ : 𝒢_n × 𝒢_m \\to 𝒢_{n - m}"
+- unicodemath: 1\\⌊ : 𝒢_n × 𝒢_m \\to 𝒢_{n - m}
   mathml: |
     <math display="block"><mrow><mo>⌊</mo><mo>:</mo><msub><mi>𝒢</mi><mi>𝑛</mi></msub><mo>×</mo><msub><mi>𝒢</mi><mi>𝑚</mi></msub><mo stretchy="true">→</mo><msub><mi>𝒢</mi><mrow intent=":fenced"><mo>{</mo><mrow><mi>𝑛</mi><mo>−</mo><mi>𝑚</mi></mrow><mo>}</mo></mrow></msub></mrow></math>
 
-- unicodemath: "1\\⌋ : 𝒢_n × 𝒢_m \\to 𝒢_{m - n}"
+- unicodemath: 1\\⌋ : 𝒢_n × 𝒢_m \\to 𝒢_{m - n}
   mathml: |
     <math display="block"><mrow><mo>⌋</mo><mo>:</mo><msub><mi>𝒢</mi><mi>𝑛</mi></msub><mo>×</mo><msub><mi>𝒢</mi><mi>𝑚</mi></msub><mo stretchy="true">→</mo><msub><mi>𝒢</mi><mrow intent=":fenced"><mo>{</mo><mrow><mi>𝑚</mi><mo>−</mo><mi>𝑛</mi></mrow><mo>}</mo></mrow></msub></mrow></math>
 
@@ -835,11 +842,11 @@ tests:
 
 - unicodemath: 1a^
   mathml: |
-    <math display="block"><mrow><mi>𝑎</mi><mstyle mathcolor="#F00"><mo>^</mo></mstyle></mrow></math>
+    <math display="block"><mrow><mi>𝑎</mi><mo mathcolor="#F00">^</mo></mrow></math>
 
 - unicodemath: 1a_
   mathml: |
-    <math display="block"><mrow><mi>𝑎</mi><mstyle mathcolor="#F00"><mo>_</mo></mstyle></mrow></math>
+    <math display="block"><mrow><mi>𝑎</mi><mo mathcolor="#F00">_</mo></mrow></math>
 
 - unicodemath: 1a + b
   mathml: |
@@ -999,7 +1006,7 @@ tests:
 
 - unicodemath: 1a_1 + a_2 + ⋯ + a_(i-1) + a_i + ⏞(a_(i+1) + ⋯ + a_(n-1) + a_n)^(n-i " times")
   mathml: |
-    <math display="block"><mrow><msub><mi>𝑎</mi><mn>1</mn></msub><mo>+</mo><msub><mi>𝑎</mi><mn>2</mn></msub><mo>+</mo><mo>⋯</mo><mo>+</mo><msub><mi>𝑎</mi><mrow><mi>𝑖</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>𝑎</mi><mi>𝑖</mi></msub><mo>+</mo><mover accent="true"><mover accent="true"><mrow><msub><mi>𝑎</mi><mrow><mi>𝑖</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>+</mo><mo>⋯</mo><mo>+</mo><msub><mi>𝑎</mi><mrow><mi>𝑛</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>𝑎</mi><mi>𝑛</mi></msub></mrow><mo stretchy="true">⏞</mo></mover><mrow><mi>𝑛</mi><mo>−</mo><mi>𝑖</mi><mtext> times</mtext></mrow></mover></mrow></math>
+    <math display="block"><mrow><msub><mi>𝑎</mi><mn>1</mn></msub><mo>+</mo><msub><mi>𝑎</mi><mn>2</mn></msub><mo>+</mo><mo>⋯</mo><mo>+</mo><msub><mi>𝑎</mi><mrow><mi>𝑖</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>𝑎</mi><mi>𝑖</mi></msub><mo>+</mo><mover><mover><mrow><msub><mi>𝑎</mi><mrow><mi>𝑖</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>+</mo><mo>⋯</mo><mo>+</mo><msub><mi>𝑎</mi><mrow><mi>𝑛</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>𝑎</mi><mi>𝑛</mi></msub></mrow><mo stretchy="true">⏞</mo></mover><mrow><mi>𝑛</mi><mo>−</mo><mi>𝑖</mi><mtext> times</mtext></mrow></mover></mrow></math>
 
 - unicodemath: 1a_2
   mathml: |
@@ -1051,7 +1058,7 @@ tests:
 
 - unicodemath: 1abc⃟
   mathml: |
-    <math display="block"><mrow><mi>𝑎𝑏</mi><mover accent="true"><mi>𝑐</mi><mo>&#x20df;</mo></mover></mrow></math>
+    <math display="block"><mrow><mi>𝑎</mi><mi>𝑏</mi><mover accent="true"><mi>𝑐</mi><mo>&#x20df;</mo></mover></mrow></math>
 
 - unicodemath: 1a b
   mathml: |
@@ -1215,7 +1222,7 @@ tests:
 
 - unicodemath: 1a⊘b⊘c⊘d⊘e⊘f⊘g⊘h⊘i⊘j⊘k⊘l⊘m⊘n⊘o⊘p⊘q⊘r⊘s⊘t⊘u⊘v⊘w⊘x⊘y⊘z
   mathml: |
-    <math display="block"><mstyle displaystyle="false"><mfrac><mstyle displaystyle="false"><mfrac><mstyle displaystyle="false"><mfrac><mstyle displaystyle="false"><mfrac><mstyle displaystyle="false"><mfrac><mstyle displaystyle="false"><mfrac><mstyle displaystyle="false"><mfrac><mstyle displaystyle="false"><mfrac><mstyle displaystyle="false"><mfrac><mstyle displaystyle="false"><mfrac><mstyle displaystyle="false"><mfrac><mstyle displaystyle="false"><mfrac><mstyle displaystyle="false"><mfrac><mstyle displaystyle="false"><mfrac><mstyle displaystyle="false"><mfrac><mstyle displaystyle="false"><mfrac><mstyle displaystyle="false"><mfrac><mstyle displaystyle="false"><mfrac><mstyle displaystyle="false"><mfrac><mstyle displaystyle="false"><mfrac><mstyle displaystyle="false"><mfrac><mstyle displaystyle="false"><mfrac><mstyle displaystyle="false"><mfrac><mstyle displaystyle="false"><mfrac><mstyle displaystyle="false"><mfrac><mi>𝑎</mi><mi>𝑏</mi></mfrac></mstyle><mi>𝑐</mi></mfrac></mstyle><mi>𝑑</mi></mfrac></mstyle><mi>𝑒</mi></mfrac></mstyle><mi>𝑓</mi></mfrac></mstyle><mi>𝑔</mi></mfrac></mstyle><mi>ℎ</mi></mfrac></mstyle><mi>𝑖</mi></mfrac></mstyle><mi>𝑗</mi></mfrac></mstyle><mi>𝑘</mi></mfrac></mstyle><mi>𝑙</mi></mfrac></mstyle><mi>𝑚</mi></mfrac></mstyle><mi>𝑛</mi></mfrac></mstyle><mi>𝑜</mi></mfrac></mstyle><mi>𝑝</mi></mfrac></mstyle><mi>𝑞</mi></mfrac></mstyle><mi>𝑟</mi></mfrac></mstyle><mi>𝑠</mi></mfrac></mstyle><mi>𝑡</mi></mfrac></mstyle><mi>𝑢</mi></mfrac></mstyle><mi>𝑣</mi></mfrac></mstyle><mi>𝑤</mi></mfrac></mstyle><mi>𝑥</mi></mfrac></mstyle><mi>𝑦</mi></mfrac></mstyle><mi>𝑧</mi></mfrac></mstyle></math>
+    <math display="block"><mfrac displaystyle="false"><mfrac displaystyle="false"><mfrac displaystyle="false"><mfrac displaystyle="false"><mfrac displaystyle="false"><mfrac displaystyle="false"><mfrac displaystyle="false"><mfrac displaystyle="false"><mfrac displaystyle="false"><mfrac displaystyle="false"><mfrac displaystyle="false"><mfrac displaystyle="false"><mfrac displaystyle="false"><mfrac displaystyle="false"><mfrac displaystyle="false"><mfrac displaystyle="false"><mfrac displaystyle="false"><mfrac displaystyle="false"><mfrac displaystyle="false"><mfrac displaystyle="false"><mfrac displaystyle="false"><mfrac displaystyle="false"><mfrac displaystyle="false"><mfrac displaystyle="false"><mfrac displaystyle="false"><mi>𝑎</mi><mi>𝑏</mi></mfrac><mi>𝑐</mi></mfrac><mi>𝑑</mi></mfrac><mi>𝑒</mi></mfrac><mi>𝑓</mi></mfrac><mi>𝑔</mi></mfrac><mi>ℎ</mi></mfrac><mi>𝑖</mi></mfrac><mi>𝑗</mi></mfrac><mi>𝑘</mi></mfrac><mi>𝑙</mi></mfrac><mi>𝑚</mi></mfrac><mi>𝑛</mi></mfrac><mi>𝑜</mi></mfrac><mi>𝑝</mi></mfrac><mi>𝑞</mi></mfrac><mi>𝑟</mi></mfrac><mi>𝑠</mi></mfrac><mi>𝑡</mi></mfrac><mi>𝑢</mi></mfrac><mi>𝑣</mi></mfrac><mi>𝑤</mi></mfrac><mi>𝑥</mi></mfrac><mi>𝑦</mi></mfrac><mi>𝑧</mi></mfrac></math>
 
 - unicodemath: 1b
   mathml: |
@@ -1239,11 +1246,11 @@ tests:
 
 - unicodemath: 1cos⁡θ = 1⁄2 𝑒^(ⅈ⁢θ) + "c.c."
   mathml: |
-    <math display="block"><mrow><mrow intent=":function"><mi>cos</mi><mo>&ApplyFunction;</mo><mi>𝜃</mi></mrow><mo>=</mo><mfrac bevelled="true"><mn>1</mn><mn>2</mn></mfrac><msup><mi>𝑒</mi><mrow><mi intent="ⅈ">𝑖</mi><mo>⁢</mo><mi>𝜃</mi></mrow></msup><mo>+</mo><mtext>c.c.</mtext></mrow></math>
+    <math display="block"><mrow><mrow intent=":function"><mi>cos</mi><mo>⁡</mo><mi>𝜃</mi></mrow><mo>=</mo><mfrac bevelled="true"><mn>1</mn><mn>2</mn></mfrac><msup><mi>𝑒</mi><mrow><mi intent="ⅈ">𝑖</mi><mo>⁢</mo><mi>𝜃</mi></mrow></msup><mo>+</mo><mtext>c.c.</mtext></mrow></math>
 
 - unicodemath: 1cos▒² α
   mathml: |
-    <math display="block"><mrow intent=":function"><msup><mi>cos</mi><mn>2</mn></msup><mo>&ApplyFunction;</mo><mi>𝛼</mi></mrow></math>
+    <math display="block"><mrow intent=":function"><msup><mi>cos</mi><mn>2</mn></msup><mo>⁡</mo><mi>𝛼</mi></mrow></math>
 
 - unicodemath: 1d
   mathml: |
@@ -1251,7 +1258,7 @@ tests:
 
 - unicodemath: 1dy/dx
   mathml: |
-    <math display="block"><mfrac intent="derivative(y,1,x)"><mrow><mi>𝑑</mi><mi>𝑦</mi></mrow><mrow><mi>𝑑</mi><mi>𝑥</mi></mrow></mfrac></math>
+    <math display="block"><mfrac intent=":derivative(1,y,x)"><mrow><mi>𝑑</mi><mi>𝑦</mi></mrow><mrow><mi>𝑑</mi><mi>𝑥</mi></mrow></mfrac></math>
 
 - unicodemath: 1e'
   mathml: |
@@ -1259,7 +1266,7 @@ tests:
 
 - unicodemath: 1exp(x/a(x,G(x)))
   mathml: |
-    <math display="block"><mrow intent=":function"><mi>exp</mi><mo>&ApplyFunction;</mo><mrow intent=":fenced"><mo>(</mo><mfrac><mi>𝑥</mi><mrow><mi>𝑎</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><mrow><mi>𝐺</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mfrac><mo>)</mo></mrow></mrow></math>
+    <math display="block"><mrow intent=":function"><mi>exp</mi><mo>⁡</mo><mrow intent=":fenced"><mo>(</mo><mfrac><mi>𝑥</mi><mrow><mi>𝑎</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><mrow><mi>𝐺</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mfrac><mo>)</mo></mrow></mrow></math>
 
 - unicodemath: 1f
   mathml: |
@@ -1267,11 +1274,11 @@ tests:
 
 - unicodemath: 1f'(t) = 8 ((1-cos〖\\theta/2〗)/(1+cos〖\\theta/2〗) sin〖\\theta/2〗)^2 (t-1) t (2t - 1) (6t^2 - 6t + 1)
   mathml: |
-    <math display="block"><mrow><mrow><msup><mi>𝑓</mi><mo>′</mo></msup><mrow intent=":fenced"><mo>(</mo><mi>𝑡</mi><mo>)</mo></mrow></mrow><mo>=</mo><mn>8</mn><mrow><msup><mrow intent=":fenced"><mo>(</mo><mrow><mfrac><mrow><mn>1</mn><mo>−</mo><mrow intent=":function"><mi>cos</mi><mo>&ApplyFunction;</mo><mrow intent=":fenced"><mo></mo><mfrac><mi>𝜃</mi><mn>2</mn></mfrac><mo></mo></mrow></mrow></mrow><mrow><mn>1</mn><mo>+</mo><mrow intent=":function"><mi>cos</mi><mo>&ApplyFunction;</mo><mrow intent=":fenced"><mo></mo><mfrac><mi>𝜃</mi><mn>2</mn></mfrac><mo></mo></mrow></mrow></mrow></mfrac><mrow intent=":function"><mi>sin</mi><mo>&ApplyFunction;</mo><mrow intent=":fenced"><mo></mo><mfrac><mi>𝜃</mi><mn>2</mn></mfrac><mo></mo></mrow></mrow></mrow><mo>)</mo></mrow><mn>2</mn></msup><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑡</mi><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mi>𝑡</mi><mrow intent=":fenced"><mo>(</mo><mrow><mrow><mn>2</mn><mi>𝑡</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow><mrow intent=":fenced"><mo>(</mo><mrow><mrow><mn>6</mn><msup><mi>𝑡</mi><mn>2</mn></msup></mrow><mo>−</mo><mrow><mn>6</mn><mi>𝑡</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math>
+    <math display="block"><mrow><mrow><msup><mi>𝑓</mi><mo>′</mo></msup><mrow intent=":fenced"><mo>(</mo><mi>𝑡</mi><mo>)</mo></mrow></mrow><mo>=</mo><mn>8</mn><mrow><msup><mrow intent=":fenced"><mo>(</mo><mrow><mfrac><mrow><mn>1</mn><mo>−</mo><mrow intent=":function"><mi>cos</mi><mo>⁡</mo><mrow intent=":fenced"><mo></mo><mfrac><mi>𝜃</mi><mn>2</mn></mfrac><mo></mo></mrow></mrow></mrow><mrow><mn>1</mn><mo>+</mo><mrow intent=":function"><mi>cos</mi><mo>⁡</mo><mrow intent=":fenced"><mo></mo><mfrac><mi>𝜃</mi><mn>2</mn></mfrac><mo></mo></mrow></mrow></mrow></mfrac><mrow intent=":function"><mi>sin</mi><mo>⁡</mo><mrow intent=":fenced"><mo></mo><mfrac><mi>𝜃</mi><mn>2</mn></mfrac><mo></mo></mrow></mrow></mrow><mo>)</mo></mrow><mn>2</mn></msup><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑡</mi><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mi>𝑡</mi><mrow intent=":fenced"><mo>(</mo><mrow><mrow><mn>2</mn><mi>𝑡</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow><mrow intent=":fenced"><mo>(</mo><mrow><mrow><mn>6</mn><msup><mi>𝑡</mi><mn>2</mn></msup></mrow><mo>−</mo><mrow><mn>6</mn><mi>𝑡</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math>
 
 - unicodemath: 1f'(t) = 8 ((1-cos〖\\theta/2〗)/(1+cos〖\\theta/2〗) sin〖\\theta/2〗)^2 (t-1) t (2t - 1) (6t² - 6t + 1)
   mathml: |
-    <math display="block"><mrow><mrow><msup><mi>𝑓</mi><mo>′</mo></msup><mrow intent=":fenced"><mo>(</mo><mi>𝑡</mi><mo>)</mo></mrow></mrow><mo>=</mo><mn>8</mn><mrow><msup><mrow intent=":fenced"><mo>(</mo><mrow><mfrac><mrow><mn>1</mn><mo>−</mo><mrow intent=":function"><mi>cos</mi><mo>&ApplyFunction;</mo><mrow intent=":fenced"><mo></mo><mfrac><mi>𝜃</mi><mn>2</mn></mfrac><mo></mo></mrow></mrow></mrow><mrow><mn>1</mn><mo>+</mo><mrow intent=":function"><mi>cos</mi><mo>&ApplyFunction;</mo><mrow intent=":fenced"><mo></mo><mfrac><mi>𝜃</mi><mn>2</mn></mfrac><mo></mo></mrow></mrow></mrow></mfrac><mrow intent=":function"><mi>sin</mi><mo>&ApplyFunction;</mo><mrow intent=":fenced"><mo></mo><mfrac><mi>𝜃</mi><mn>2</mn></mfrac><mo></mo></mrow></mrow></mrow><mo>)</mo></mrow><mn>2</mn></msup><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑡</mi><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mi>𝑡</mi><mrow intent=":fenced"><mo>(</mo><mrow><mrow><mn>2</mn><mi>𝑡</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow><mrow intent=":fenced"><mo>(</mo><mrow><mrow><mn>6</mn><msup><mi>𝑡</mi><mn>2</mn></msup></mrow><mo>−</mo><mrow><mn>6</mn><mi>𝑡</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math>
+    <math display="block"><mrow><mrow><msup><mi>𝑓</mi><mo>′</mo></msup><mrow intent=":fenced"><mo>(</mo><mi>𝑡</mi><mo>)</mo></mrow></mrow><mo>=</mo><mn>8</mn><mrow><msup><mrow intent=":fenced"><mo>(</mo><mrow><mfrac><mrow><mn>1</mn><mo>−</mo><mrow intent=":function"><mi>cos</mi><mo>⁡</mo><mrow intent=":fenced"><mo></mo><mfrac><mi>𝜃</mi><mn>2</mn></mfrac><mo></mo></mrow></mrow></mrow><mrow><mn>1</mn><mo>+</mo><mrow intent=":function"><mi>cos</mi><mo>⁡</mo><mrow intent=":fenced"><mo></mo><mfrac><mi>𝜃</mi><mn>2</mn></mfrac><mo></mo></mrow></mrow></mrow></mfrac><mrow intent=":function"><mi>sin</mi><mo>⁡</mo><mrow intent=":fenced"><mo></mo><mfrac><mi>𝜃</mi><mn>2</mn></mfrac><mo></mo></mrow></mrow></mrow><mo>)</mo></mrow><mn>2</mn></msup><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑡</mi><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mi>𝑡</mi><mrow intent=":fenced"><mo>(</mo><mrow><mrow><mn>2</mn><mi>𝑡</mi></mrow><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow><mrow intent=":fenced"><mo>(</mo><mrow><mrow><mn>6</mn><msup><mi>𝑡</mi><mn>2</mn></msup></mrow><mo>−</mo><mrow><mn>6</mn><mi>𝑡</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math>
 
 - unicodemath: 1f'(x) = a
   mathml: |
@@ -1279,35 +1286,35 @@ tests:
 
 - unicodemath: 1f(ξ)=∫_a▒f(x)ⅇ^(2πⅈxξ) ⅆx#[1]
   mathml: |
-    <math display="block"><mtable><mlabeledtr id="-1-"><mtd><mtext>[1]</mtext></mtd><mtd><mrow><mrow><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mi>𝜉</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow intent="integral(𝑎,,$n)"><msub><mo>∫</mo><mi>𝑎</mi></msub><mrow arg="n"><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow><msup><mi intent="ⅇ">𝑒</mi><mrow><mn>2</mn><mrow><mi>𝜋</mi><mi intent="ⅈ">𝑖</mi><mi>𝑥</mi><mi>𝜉</mi></mrow></mrow></msup><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mrow></mrow></mrow></mtd></mlabeledtr></mtable></math>
+    <math display="block"><mtable><mlabeledtr id="-1-"><mtd><mtext>[1]</mtext></mtd><mtd><mrow><mrow><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mi>𝜉</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow intent=":integral(𝑎,,$n)"><msub><mo>∫</mo><mi>𝑎</mi></msub><mrow arg="n"><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow><msup><mi intent="ⅇ">𝑒</mi><mrow><mn>2</mn><mrow><mi>𝜋</mi><mi intent="ⅈ">𝑖</mi><mi>𝑥</mi><mi>𝜉</mi></mrow></mrow></msup><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mrow></mrow></mrow></mtd></mlabeledtr></mtable></math>
 
 - unicodemath: 1f̂(ξ)=∫_-∞^∞▒f(x)ⅇ^(-2πⅈxξ)ⅆx
   mathml: |
-    <math display="block"><mrow><mrow><mover accent="true"><mi>𝑓</mi><mo>&#x302;</mo></mover><mrow intent=":fenced"><mo>(</mo><mi>𝜉</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow intent="integral($l,∞,$n)"><msubsup><mo>∫</mo><mrow arg="l"><mo>−</mo><mi>∞</mi></mrow><mi>∞</mi></msubsup><mrow arg="n"><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow><msup><mi intent="ⅇ">𝑒</mi><mrow><mrow intent=":fenced"><mo>(</mo><mrow><mo>−</mo><mrow><mn>2</mn><mrow><mi>𝜋</mi><mi intent="ⅈ">𝑖</mi><mi>𝑥</mi><mi>𝜉</mi></mrow></mrow></mrow><mo>)</mo></mrow><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mrow></msup></mrow></mrow></mrow></math>
+    <math display="block"><mrow><mrow><mover accent="true"><mi>𝑓</mi><mo>&#x302;</mo></mover><mrow intent=":fenced"><mo>(</mo><mi>𝜉</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow intent=":integral($l,∞,$n)"><msubsup><mo>∫</mo><mrow arg="l"><mo>−</mo><mi>∞</mi></mrow><mi>∞</mi></msubsup><mrow arg="n"><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow><msup><mi intent="ⅇ">𝑒</mi><mrow><mrow intent=":fenced"><mo>(</mo><mrow><mo>−</mo><mrow><mn>2</mn><mrow><mi>𝜋</mi><mi intent="ⅈ">𝑖</mi><mi>𝑥</mi><mi>𝜉</mi></mrow></mrow></mrow><mo>)</mo></mrow><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mrow></msup></mrow></mrow></mrow></math>
 
 - unicodemath: 1f̂(ξ)=∫_-∞^∞▒f(x)ⅇ^-2πⅈxξ ⅆx
   mathml: |
-    <math display="block"><mrow><mrow><mover accent="true"><mi>𝑓</mi><mo>&#x302;</mo></mover><mrow intent=":fenced"><mo>(</mo><mi>𝜉</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow intent="integral($l,∞,$n)"><msubsup><mo>∫</mo><mrow arg="l"><mo>−</mo><mi>∞</mi></mrow><mi>∞</mi></msubsup><mrow arg="n"><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow><msup><mi intent="ⅇ">𝑒</mi><mrow><mo>−</mo><mrow><mn>2</mn><mrow><mi>𝜋</mi><mi intent="ⅈ">𝑖</mi><mi>𝑥</mi><mi>𝜉</mi></mrow></mrow></mrow></msup><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mrow></mrow></mrow></math>
+    <math display="block"><mrow><mrow><mover accent="true"><mi>𝑓</mi><mo>&#x302;</mo></mover><mrow intent=":fenced"><mo>(</mo><mi>𝜉</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow intent=":integral($l,∞,$n)"><msubsup><mo>∫</mo><mrow arg="l"><mo>−</mo><mi>∞</mi></mrow><mi>∞</mi></msubsup><mrow arg="n"><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow><msup><mi intent="ⅇ">𝑒</mi><mrow><mo>−</mo><mrow><mn>2</mn><mrow><mi>𝜋</mi><mi intent="ⅈ">𝑖</mi><mi>𝑥</mi><mi>𝜉</mi></mrow></mrow></mrow></msup><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mrow></mrow></mrow></math>
 
 - unicodemath: 1f̂(ξ)=∫_-∞^∞▒f(x)ⅇ^-2πⅈxξ ⅆx#[42]
   mathml: |
-    <math display="block"><mtable><mlabeledtr id="-42-"><mtd><mtext>[42]</mtext></mtd><mtd><mrow><mrow><mover accent="true"><mi>𝑓</mi><mo>&#x302;</mo></mover><mrow intent=":fenced"><mo>(</mo><mi>𝜉</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow intent="integral($l,∞,$n)"><msubsup><mo>∫</mo><mrow arg="l"><mo>−</mo><mi>∞</mi></mrow><mi>∞</mi></msubsup><mrow arg="n"><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow><msup><mi intent="ⅇ">𝑒</mi><mrow><mo>−</mo><mrow><mn>2</mn><mrow><mi>𝜋</mi><mi intent="ⅈ">𝑖</mi><mi>𝑥</mi><mi>𝜉</mi></mrow></mrow></mrow></msup><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mrow></mrow></mrow></mtd></mlabeledtr></mtable></math>
+    <math display="block"><mtable><mlabeledtr id="-42-"><mtd><mtext>[42]</mtext></mtd><mtd><mrow><mrow><mover accent="true"><mi>𝑓</mi><mo>&#x302;</mo></mover><mrow intent=":fenced"><mo>(</mo><mi>𝜉</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow intent=":integral($l,∞,$n)"><msubsup><mo>∫</mo><mrow arg="l"><mo>−</mo><mi>∞</mi></mrow><mi>∞</mi></msubsup><mrow arg="n"><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow><msup><mi intent="ⅇ">𝑒</mi><mrow><mo>−</mo><mrow><mn>2</mn><mrow><mi>𝜋</mi><mi intent="ⅈ">𝑖</mi><mi>𝑥</mi><mi>𝜉</mi></mrow></mrow></mrow></msup><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mrow></mrow></mrow></mtd></mlabeledtr></mtable></math>
 
 - unicodemath: 1lim\u2061
   mathml: |
-    <math display="block"><mrow><mi>lim</mi><mo>&ApplyFunction;</mo></mrow></math>
+    <math display="block"><mrow><mi>lim</mi><mo>⁡</mo></mrow></math>
 
 - unicodemath: 1lim⁡_(a→∞)
   mathml: |
-    <math display="block"><mrow intent=":function"><mi>lim</mi><mo>&ApplyFunction;</mo><msub><mo>&ApplyFunction;</mo><mrow><mi>𝑎</mi><mo stretchy="true">→</mo><mi>∞</mi></mrow></msub></mrow></math>
+    <math display="block"><mrow intent=":function"><mi>lim</mi><mo>⁡</mo><msub><mo>⁡</mo><mrow><mi>𝑎</mi><mo stretchy="true">→</mo><mi>∞</mi></mrow></msub></mrow></math>
 
 - unicodemath: 1lim⁡_(a→∞) a + lim⁡²_(a→∞) a + sin²(a) = 42
   mathml: |
-    <math display="block"><mrow><mrow intent=":function"><munder><mi>lim</mi><mrow><mi>𝑎</mi><mo stretchy="true">→</mo><mi>∞</mi></mrow></munder><mo>&ApplyFunction;</mo><mi>𝑎</mi></mrow><mo>+</mo><mrow intent=":function"><munder><msup><mi>lim</mi><mn>2</mn></msup><mrow><mi>𝑎</mi><mo stretchy="true">→</mo><mi>∞</mi></mrow></munder><mo>&ApplyFunction;</mo><mi>𝑎</mi></mrow><mo>+</mo><mrow intent=":function"><msup><mi>sin</mi><mn>2</mn></msup><mo>&ApplyFunction;</mo><mrow intent=":fenced"><mo>(</mo><mi>𝑎</mi><mo>)</mo></mrow></mrow><mo>=</mo><mn>42</mn></mrow></math>
+    <math display="block"><mrow><mrow intent=":function"><munder><mi>lim</mi><mrow><mi>𝑎</mi><mo stretchy="true">→</mo><mi>∞</mi></mrow></munder><mo>⁡</mo><mi>𝑎</mi></mrow><mo>+</mo><mrow intent=":function"><munder><msup><mi>lim</mi><mn>2</mn></msup><mrow><mi>𝑎</mi><mo stretchy="true">→</mo><mi>∞</mi></mrow></munder><mo>⁡</mo><mi>𝑎</mi></mrow><mo>+</mo><mrow intent=":function"><msup><mi>sin</mi><mn>2</mn></msup><mo>⁡</mo><mrow intent=":fenced"><mo>(</mo><mi>𝑎</mi><mo>)</mo></mrow></mrow><mo>=</mo><mn>42</mn></mrow></math>
 
 - unicodemath: 1lim⁡²_(a→∞) sin²(a) = 42
   mathml: |
-    <math display="block"><mrow><mrow intent=":function"><munder><msup><mi>lim</mi><mn>2</mn></msup><mrow><mi>𝑎</mi><mo stretchy="true">→</mo><mi>∞</mi></mrow></munder><mo>&ApplyFunction;</mo><mrow intent=":function"><msup><mi>sin</mi><mn>2</mn></msup><mo>&ApplyFunction;</mo><mrow intent=":fenced"><mo>(</mo><mi>𝑎</mi><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mn>42</mn></mrow></math>
+    <math display="block"><mrow><mrow intent=":function"><munder><msup><mi>lim</mi><mn>2</mn></msup><mrow><mi>𝑎</mi><mo stretchy="true">→</mo><mi>∞</mi></mrow></munder><mo>⁡</mo><mrow intent=":function"><msup><mi>sin</mi><mn>2</mn></msup><mo>⁡</mo><mrow intent=":fenced"><mo>(</mo><mi>𝑎</mi><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mn>42</mn></mrow></math>
 
 - unicodemath: 1lim┬(n→b)
   mathml: |
@@ -1315,7 +1322,7 @@ tests:
 
 - unicodemath: 1lim▒_(n→∞) a_n
   mathml: |
-    <math display="block"><mrow intent=":function"><munder><mi>lim</mi><mrow><mi>𝑛</mi><mo stretchy="true">→</mo><mi>∞</mi></mrow></munder><mo>&ApplyFunction;</mo><msub><mi>𝑎</mi><mi>𝑛</mi></msub></mrow></math>
+    <math display="block"><mrow intent=":function"><munder><mi>lim</mi><mrow><mi>𝑛</mi><mo stretchy="true">→</mo><mi>∞</mi></mrow></munder><mo>⁡</mo><msub><mi>𝑎</mi><mi>𝑛</mi></msub></mrow></math>
 
 - unicodemath: 1m+a⁄t_h
   mathml: |
@@ -1333,41 +1340,45 @@ tests:
   mathml: |
     <math display="block"><mrow><mrow intent="binomial-coefficient(𝑛,𝑘)"><mo>(</mo><mfrac linethickness="0"><mi>𝑛</mi><mi>𝑘</mi></mfrac><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mi>𝑛</mi><mo>!</mo></mrow><mrow><mrow><mi>𝑘</mi><mo>!</mo></mrow><mrow><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑛</mi><mo>−</mo><mi>𝑘</mi></mrow><mo>)</mo></mrow><mo>!</mo></mrow></mrow></mfrac></mrow></math>
 
+- unicodemath: 1sin 20=2sin 0 cos 0
+  mathml: |
+    <math display="block"><mrow><mrow intent=":function"><mi>sin</mi><mo>⁡</mo><mn>20</mn></mrow><mo>=</mo><mrow><mn>2</mn><mrow intent=":function"><mi>sin</mi><mo>⁡</mo><mn>0</mn></mrow><mrow intent=":function"><mi>cos</mi><mo>⁡</mo><mn>0</mn></mrow></mrow></mrow></math>
+
 - unicodemath: 1sin x
   mathml: |
-    <math display="block"><mrow intent=":function"><mi>sin</mi><mo>&ApplyFunction;</mo><mi>𝑥</mi></mrow></math>
+    <math display="block"><mrow intent=":function"><mi>sin</mi><mo>⁡</mo><mi>𝑥</mi></mrow></math>
 
 - unicodemath: 1sin α
   mathml: |
-    <math display="block"><mrow intent=":function"><mi>sin</mi><mo>&ApplyFunction;</mo><mi>𝛼</mi></mrow></math>
+    <math display="block"><mrow intent=":function"><mi>sin</mi><mo>⁡</mo><mi>𝛼</mi></mrow></math>
 
 - unicodemath: 1sin θ=(e^iθ-e^-iθ)/2i
   mathml: |
-    <math display="block"><mrow><mrow intent=":function"><mi>sin</mi><mo>&ApplyFunction;</mo><mi>𝜃</mi></mrow><mo>=</mo><mfrac><mrow><msup><mi>𝑒</mi><mrow><mi>𝑖</mi><mi>𝜃</mi></mrow></msup><mo>−</mo><msup><mi>𝑒</mi><mrow><mo>−</mo><mrow><mi>𝑖</mi><mi>𝜃</mi></mrow></mrow></msup></mrow><mrow><mn>2</mn><mi>𝑖</mi></mrow></mfrac></mrow></math>
+    <math display="block"><mrow><mrow intent=":function"><mi>sin</mi><mo>⁡</mo><mi>𝜃</mi></mrow><mo>=</mo><mfrac><mrow><msup><mi>𝑒</mi><mrow><mi>𝑖</mi><mi>𝜃</mi></mrow></msup><mo>−</mo><msup><mi>𝑒</mi><mrow><mo>−</mo><mrow><mi>𝑖</mi><mi>𝜃</mi></mrow></mrow></msup></mrow><mrow><mn>2</mn><mi>𝑖</mi></mrow></mfrac></mrow></math>
 
 - unicodemath: 1sin 𝜃 = 1⁄2i 𝑒^𝑖𝜃 + "c.c."
   mathml: |
-    <math display="block"><mrow><mrow intent=":function"><mi>sin</mi><mo>&ApplyFunction;</mo><mi>𝜃</mi></mrow><mo>=</mo><mfrac bevelled="true"><mn>1</mn><mrow><mn>2</mn><mi>𝑖</mi></mrow></mfrac><msup><mi>𝑒</mi><mrow><mi>𝑖</mi><mi>𝜃</mi></mrow></msup><mo>+</mo><mtext>c.c.</mtext></mrow></math>
+    <math display="block"><mrow><mrow intent=":function"><mi>sin</mi><mo>⁡</mo><mi>𝜃</mi></mrow><mo>=</mo><mfrac bevelled="true"><mn>1</mn><mrow><mn>2</mn><mi>𝑖</mi></mrow></mfrac><msup><mi>𝑒</mi><mrow><mi>𝑖</mi><mi>𝜃</mi></mrow></msup><mo>+</mo><mtext>c.c.</mtext></mrow></math>
 
 - unicodemath: 1sin^2 𝜃+cos^2 𝜃=1
   mathml: |
-    <math display="block"><mrow><mrow intent=":function"><msup><mi>sin</mi><mn>2</mn></msup><mo>&ApplyFunction;</mo><mi>𝜃</mi></mrow><mo>+</mo><mrow intent=":function"><msup><mi>cos</mi><mn>2</mn></msup><mo>&ApplyFunction;</mo><mi>𝜃</mi></mrow><mo>=</mo><mn>1</mn></mrow></math>
+    <math display="block"><mrow><mrow intent=":function"><msup><mi>sin</mi><mn>2</mn></msup><mo>⁡</mo><mi>𝜃</mi></mrow><mo>+</mo><mrow intent=":function"><msup><mi>cos</mi><mn>2</mn></msup><mo>⁡</mo><mi>𝜃</mi></mrow><mo>=</mo><mn>1</mn></mrow></math>
 
 - unicodemath: 1sinx
   mathml: |
-    <math display="block"><mrow intent=":function"><mi>sin</mi><mo>&ApplyFunction;</mo><mi>𝑥</mi></mrow></math>
+    <math display="block"><mrow intent=":function"><mi>sin</mi><mo>⁡</mo><mi>𝑥</mi></mrow></math>
 
 - unicodemath: 1sin⁡^2 x
   mathml: |
-    <math display="block"><mrow intent=":function"><msup><mi>sin</mi><mn>2</mn></msup><mo>&ApplyFunction;</mo><mi>𝑥</mi></mrow></math>
+    <math display="block"><mrow intent=":function"><msup><mi>sin</mi><mn>2</mn></msup><mo>⁡</mo><mi>𝑥</mi></mrow></math>
 
 - unicodemath: 1sin⁡x
   mathml: |
-    <math display="block"><mrow intent=":function"><mi>sin</mi><mo>&ApplyFunction;</mo><mi>𝑥</mi></mrow></math>
+    <math display="block"><mrow intent=":function"><mi>sin</mi><mo>⁡</mo><mi>𝑥</mi></mrow></math>
 
 - unicodemath: 1tg 𝑥=sin 𝑥/cos 𝑥
   mathml: |
-    <math display="block"><mrow><mrow intent=":function"><mi>tg</mi><mo>&ApplyFunction;</mo><mi>𝑥</mi></mrow><mo>=</mo><mfrac><mrow intent=":function"><mi>sin</mi><mo>&ApplyFunction;</mo><mi>𝑥</mi></mrow><mrow intent=":function"><mi>cos</mi><mo>&ApplyFunction;</mo><mi>𝑥</mi></mrow></mfrac></mrow></math>
+    <math display="block"><mrow><mrow intent=":function"><mi>tg</mi><mo>⁡</mo><mi>𝑥</mi></mrow><mo>=</mo><mfrac><mrow intent=":function"><mi>sin</mi><mo>⁡</mo><mi>𝑥</mi></mrow><mrow intent=":function"><mi>cos</mi><mo>⁡</mo><mi>𝑥</mi></mrow></mfrac></mrow></math>
 
 - unicodemath: 1v \\⌋ B
   mathml: |
@@ -1391,11 +1402,11 @@ tests:
 
 - unicodemath: 1w^h^e^e^e^e+1a+"Testing this!"-(1/2/333/4+1+1)+abc₂⁹/W_c+ab+√(42&1g)+▭(255&▭(255&b))+∑_A▒a+1+∑┴a┬b▒b
   mathml: |
-    <math display="block"><mrow><msup><mi>𝑤</mi><msup><msup><msup><msup><mi>ℎ</mi><mi>𝑒</mi></msup><mi>𝑒</mi></msup><mi>𝑒</mi></msup><mi>𝑒</mi></msup></msup><mo>+</mo><mrow><mn>1</mn><mi>𝑎</mi></mrow><mo>+</mo><mtext>Testing this!</mtext><mo>−</mo><mrow intent=":fenced"><mo>(</mo><mrow><mfrac><mfrac><mfrac><mn>1</mn><mn>2</mn></mfrac><mn>333</mn></mfrac><mn>4</mn></mfrac><mo>+</mo><mn>1</mn><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>+</mo><mfrac><mrow><mrow><mi>𝑎</mi><mi>𝑏</mi></mrow><msubsup><mi>𝑐</mi><mn>2</mn><mn>9</mn></msubsup></mrow><msub><mi>𝑊</mi><mi>𝑐</mi></msub></mfrac><mo>+</mo><mrow><mi>𝑎</mi><mi>𝑏</mi></mrow><mo>+</mo><mroot><mrow><mn>1</mn><mi>𝑔</mi></mrow><mn>42</mn></mroot><mo>+</mo><menclose notation="updiagonalstrike downdiagonalstrike verticalstrike horizontalstrike"><menclose notation="updiagonalstrike downdiagonalstrike verticalstrike horizontalstrike"><mi>𝑏</mi></menclose></menclose><mo>+</mo><mrow intent="sum(𝐴,,$n)"><munder><mo>∑</mo><mi>𝐴</mi></munder><mrow arg="n"><mi>𝑎</mi></mrow></mrow><mo>+</mo><mn>1</mn><mo>+</mo><mrow intent="sum(𝑏,𝑎,$n)"><munderover><mo>∑</mo><mi>𝑏</mi><mi>𝑎</mi></munderover><mrow arg="n"><mi>𝑏</mi></mrow></mrow></mrow></math>
+    <math display="block"><mrow><msup><mi>𝑤</mi><msup><msup><msup><msup><mi>ℎ</mi><mi>𝑒</mi></msup><mi>𝑒</mi></msup><mi>𝑒</mi></msup><mi>𝑒</mi></msup></msup><mo>+</mo><mrow><mn>1</mn><mi>𝑎</mi></mrow><mo>+</mo><mtext>Testing this!</mtext><mo>−</mo><mrow intent=":fenced"><mo>(</mo><mrow><mfrac><mfrac><mfrac><mn>1</mn><mn>2</mn></mfrac><mn>333</mn></mfrac><mn>4</mn></mfrac><mo>+</mo><mn>1</mn><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>+</mo><mfrac><mrow><mrow><mi>𝑎</mi><mi>𝑏</mi></mrow><msubsup><mi>𝑐</mi><mn>2</mn><mn>9</mn></msubsup></mrow><msub><mi>𝑊</mi><mi>𝑐</mi></msub></mfrac><mo>+</mo><mrow><mi>𝑎</mi><mi>𝑏</mi></mrow><mo>+</mo><mroot><mrow><mn>1</mn><mi>𝑔</mi></mrow><mn>42</mn></mroot><mo>+</mo><menclose notation="updiagonalstrike downdiagonalstrike verticalstrike horizontalstrike"><menclose notation="updiagonalstrike downdiagonalstrike verticalstrike horizontalstrike"><mi>𝑏</mi></menclose></menclose><mo>+</mo><mrow intent=":sum(𝐴,,$n)"><munder><mo>∑</mo><mi>𝐴</mi></munder><mrow arg="n"><mi>𝑎</mi></mrow></mrow><mo>+</mo><mn>1</mn><mo>+</mo><mrow intent=":sum(𝑏,𝑎,$n)"><munderover><mo>∑</mo><mi>𝑏</mi><mi>𝑎</mi></munderover><mrow arg="n"><mi>𝑏</mi></mrow></mrow></mrow></math>
 
 - unicodemath: 1w^h^y+∑_aα^1Ω+sin(a)+"sin(a)"+c
   mathml: |
-    <math display="block"><mrow><msup><mi>𝑤</mi><msup><mi>ℎ</mi><mi>𝑦</mi></msup></msup><mo>+</mo><msubsup><mo>∑</mo><mrow><mi>𝑎</mi><mi>𝛼</mi></mrow><mrow><mn>1</mn><mi mathvariant="normal">Ω</mi></mrow></msubsup><mo>+</mo><mrow intent=":function"><mi>sin</mi><mo>&ApplyFunction;</mo><mrow intent=":fenced"><mo>(</mo><mi>𝑎</mi><mo>)</mo></mrow></mrow><mo>+</mo><mtext>sin(a)</mtext><mo>+</mo><mi>𝑐</mi></mrow></math>
+    <math display="block"><mrow><msup><mi>𝑤</mi><msup><mi>ℎ</mi><mi>𝑦</mi></msup></msup><mo>+</mo><msubsup><mo>∑</mo><mrow><mi>𝑎</mi><mi>𝛼</mi></mrow><mrow><mn>1</mn><mi mathvariant="normal">Ω</mi></mrow></msubsup><mo>+</mo><mrow intent=":function"><mi>sin</mi><mo>⁡</mo><mrow intent=":fenced"><mo>(</mo><mi>𝑎</mi><mo>)</mo></mrow></mrow><mo>+</mo><mtext>sin(a)</mtext><mo>+</mo><mi>𝑐</mi></mrow></math>
 
 - unicodemath: 1w^h_c
   mathml: |
@@ -1497,7 +1508,7 @@ tests:
   mathml: |
     <math display="block"><mrow><msup><mrow intent=":fenced"><mo>{</mo><mi>𝑎</mi><mo>⌋</mo></mrow><mrow intent=":fenced"><mo>⟨</mo><mfrac><mfrac><mn>1</mn><mrow intent=":fenced"><mo>[</mo><mn>2</mn><mo>)</mo></mrow></mfrac><mn>3</mn></mfrac><mo>]</mo></mrow></msup><mo>.</mo></mrow></math>
 
-- unicodemath: "1{v_i: i \\in {1,2,3,4,5}}"
+- unicodemath: 1{v_i: i \\in {1,2,3,4,5}}
   mathml: |
     <math display="block"><mrow intent=":fenced"><mo>{</mo><mrow><msub><mi>𝑣</mi><mi>𝑖</mi></msub><mo>:</mo><mi>𝑖</mi><mo>∈</mo><mrow intent=":fenced"><mo>{</mo><mrow><mn>1,2</mn><mn>,3</mn><mn>,4</mn><mn>,5</mn></mrow><mo>}</mo></mrow></mrow><mo>}</mo></mrow></math>
 
@@ -1515,7 +1526,7 @@ tests:
 
 - unicodemath: 1{■(a@b)〗§
   mathml: |
-    <math display="block"><mrow><mrow intent=":fenced"><mo>{</mo><mtable intent="matrix"><mtr><mtd><mi>𝑎</mi></mtd></mtr><mtr><mtd><mi>𝑏</mi></mtd></mtr></mtable><mo></mo></mrow><mo>§</mo></mrow></math>
+    <math display="block"><mrow><mrow intent=":fenced"><mo>{</mo><mtable intent=":matrix(2,1)"><mtr><mtd><mi>𝑎</mi></mtd></mtr><mtr><mtd><mi>𝑏</mi></mtd></mtr></mtable><mo></mo></mrow><mo>§</mo></mrow></math>
 
 - unicodemath: 1|(a|b−c|d)|
   mathml: |
@@ -1535,11 +1546,11 @@ tests:
 
 - unicodemath: 1|x| = {█(&x" if "x ≥ 0@−&x" if "x < 0)┤
   mathml: |
-    <math display="block"><mrow><mrow intent=":fenced"><mo>|</mo><mi>𝑥</mi><mo>|</mo></mrow><mo>=</mo><mrow intent=":fenced"><mo>{</mo><mtable intent=":equations" columnalign="right"><mtr><mtd><maligngroup /><mspace width="0" /><malignmark /><mrow><mrow><mi>𝑥</mi><mtext> if </mtext><mi>𝑥</mi></mrow><mo>≥</mo><mn>0</mn></mrow></mtd></mtr><mtr><mtd><maligngroup /><mo>−</mo><malignmark /><mrow><mrow><mi>𝑥</mi><mtext> if </mtext><mi>𝑥</mi></mrow><mo><</mo><mn>0</mn></mrow></mtd></mtr></mtable><mo></mo></mrow></mrow></math>
+    <math display="block"><mrow><mrow intent=":fenced"><mo>|</mo><mi>𝑥</mi><mo>|</mo></mrow><mo>=</mo><mrow intent=":cases"><mo>{</mo><mtable intent=":equations" columnalign="right"><mtr><mtd><maligngroup /><mspace width="0" /><malignmark /><mrow><mrow><mi>𝑥</mi><mtext> if </mtext><mi>𝑥</mi></mrow><mo>≥</mo><mn>0</mn></mrow></mtd></mtr><mtr><mtd><maligngroup /><mo>−</mo><malignmark /><mrow><mrow><mi>𝑥</mi><mtext> if </mtext><mi>𝑥</mi></mrow><mo>&lt;</mo><mn>0</mn></mrow></mtd></mtr></mtable><mo></mo></mrow></mrow></math>
 
 - unicodemath: 1|x|={█(&x&"if "x≥0@-&x&"if "x<0)〗
   mathml: |
-    <math display="block"><mrow><mrow intent=":fenced"><mo>|</mo><mi>𝑥</mi><mo>|</mo></mrow><mo>=</mo><mrow intent=":fenced"><mo>{</mo><mtable intent=":equations" columnalign="right"><mtr><mtd><maligngroup /><mspace width="0" /><malignmark /><mi>𝑥</mi></mtd><mtd><maligngroup /><mrow><mrow><mtext>if </mtext><mi>𝑥</mi></mrow><mo>≥</mo><mn>0</mn></mrow></mtd></mtr><mtr><mtd><maligngroup /><mo>−</mo><malignmark /><mi>𝑥</mi></mtd><mtd><maligngroup /><mrow><mrow><mtext>if </mtext><mi>𝑥</mi></mrow><mo><</mo><mn>0</mn></mrow></mtd></mtr></mtable><mo></mo></mrow></mrow></math>
+    <math display="block"><mrow><mrow intent=":fenced"><mo>|</mo><mi>𝑥</mi><mo>|</mo></mrow><mo>=</mo><mrow intent=":cases"><mo>{</mo><mtable intent=":equations" columnalign="right"><mtr><mtd><maligngroup /><mspace width="0" /><malignmark /><mi>𝑥</mi></mtd><mtd><maligngroup /><mrow><mrow><mtext>if </mtext><mi>𝑥</mi></mrow><mo>≥</mo><mn>0</mn></mrow></mtd></mtr><mtr><mtd><maligngroup /><mo>−</mo><malignmark /><mi>𝑥</mi></mtd><mtd><maligngroup /><mrow><mrow><mtext>if </mtext><mi>𝑥</mi></mrow><mo>&lt;</mo><mn>0</mn></mrow></mtd></mtr></mtable><mo></mo></mrow></mrow></math>
 
 - unicodemath: 1¹₂3
   mathml: |
@@ -1695,7 +1706,7 @@ tests:
 
 - unicodemath: 1α⊘β
   mathml: |
-    <math display="block"><mstyle displaystyle="false"><mfrac><mi>𝛼</mi><mi>𝛽</mi></mfrac></mstyle></math>
+    <math display="block"><mfrac displaystyle="false"><mi>𝛼</mi><mi>𝛽</mi></mfrac></math>
 
 - unicodemath: 1α┬β┴γ
   mathml: |
@@ -1737,13 +1748,13 @@ tests:
   mathml: |
     <math display="block"><mi>𝜌</mi></math>
 
-- unicodemath: "1​^* : 𝒢 → 𝒢"
+- unicodemath: 1​^* : 𝒢 → 𝒢
   mathml: |
     <math display="block"><mrow><msup><mspace width="0" /><mo>∗</mo></msup><mo>:</mo><mi>𝒢</mi><mo stretchy="true">→</mo><mi>𝒢</mi></mrow></math>
 
-- unicodemath: '1⁅"BS" = 1/N ∑_(t=1)^N▒(f_t-o_t )^2 ⫷from https://github.com/adiabatic/predictions/ommit/5c08e653ac9035c8a0c127d673a82ef662cc2321⫸'
+- unicodemath: 1⁅"BS" = 1/N ∑_(t=1)^N▒(f_t-o_t )^2 ⫷from https://github.com/adiabatic/predictions/ommit/5c08e653ac9035c8a0c127d673a82ef662cc2321⫸
   mathml: |
-    <math display="block"><mrow><mo>⁅</mo><mtext>BS</mtext><mo>=</mo><mfrac><mn>1</mn><mi>𝑁</mi></mfrac><mrow intent="sum($l,𝑁,$n)"><munderover><mo>∑</mo><mrow arg="l"><mi>𝑡</mi><mo>=</mo><mn>1</mn></mrow><mi>𝑁</mi></munderover><mrow arg="n"><msup><mrow intent=":fenced"><mo>(</mo><mrow><msub><mi>𝑓</mi><mi>𝑡</mi></msub><mo>−</mo><msub><mi>𝑜</mi><mi>𝑡</mi></msub></mrow><mo>)</mo></mrow><mn>2</mn></msup></mrow></mrow></mrow></math>
+    <math display="block"><mrow><mo>⁅</mo><mtext>BS</mtext><mo>=</mo><mfrac><mn>1</mn><mi>𝑁</mi></mfrac><mrow intent=":sum($l,𝑁,$n)"><munderover><mo>∑</mo><mrow arg="l"><mi>𝑡</mi><mo>=</mo><mn>1</mn></mrow><mi>𝑁</mi></munderover><mrow arg="n"><msup><mrow intent=":fenced"><mo>(</mo><mrow><msub><mi>𝑓</mi><mi>𝑡</mi></msub><mo>−</mo><msub><mi>𝑜</mi><mi>𝑡</mi></msub></mrow><mo>)</mo></mrow><mn>2</mn></msup></mrow></mrow></mrow></math>
 
 - unicodemath: 1₁ a
   mathml: |
@@ -1769,9 +1780,25 @@ tests:
   mathml: |
     <math display="block"><mrow><mi>ℲDa</mi><mo>+</mo><mi>ℲCa</mi><mo>+</mo><mi>𝑎</mi><mo>+</mo><mi>ℲAa</mi><mo>+</mo><mi>ℲBa</mi></mrow></math>
 
+- unicodemath: 1ⅅ_𝑥 𝑓(𝑥)≠𝜕_𝑥𝑦 𝑓(𝑥,𝑦)
+  mathml: |
+    <math display="block"><mrow><mrow intent=":derivative(1,$f,𝑥)"><msub><mi intent="ⅅ">𝐷</mi><mi>𝑥</mi></msub><mrow arg="f"><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow></mrow><mo>≠</mo><mrow intent=":partial-derivative(2,$f,𝑥,𝑦)"><msub><mi>𝜕</mi><mrow><mi>𝑥</mi><mi>𝑦</mi></mrow></msub><mrow arg="f"><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><mi>𝑦</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow></math>
+
+- unicodemath: 1ⅅ𝑓(𝑥′)=0
+  mathml: |
+    <math display="block"><mrow><mrow><mrow intent=":derivative(1,𝑓,𝑥′)"><mi intent="ⅅ">𝐷</mi><mi>𝑓</mi></mrow><mrow intent=":fenced"><mo>(</mo><msup><mi>𝑥</mi><mo>′</mo></msup><mo>)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>
+
+- unicodemath: 1ⅅ²𝑓(𝑥′)=𝑑²𝑓(𝑥′)/𝑑𝑥′²
+  mathml: |
+    <math display="block"><mrow><mrow intent=":derivative(2,$f,𝑥′)"><msup><mi intent="ⅅ">𝐷</mi><mn>2</mn></msup><mrow arg="f"><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><msup><mi>𝑥</mi><mo>′</mo></msup><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mfrac intent=":derivative(2,$f,𝑥′)"><mrow><msup><mi>𝑑</mi><mn>2</mn></msup><mrow arg="f"><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><msup><mi>𝑥</mi><mo>′</mo></msup><mo>)</mo></mrow></mrow></mrow><mrow><mi>𝑑</mi><msup><mi>𝑥</mi><mrow><mo>′</mo><mn>2</mn></mrow></msup></mrow></mfrac></mrow></math>
+
+- unicodemath: 1ⅆ/ⅆ𝑧⁡arcsin⁡𝑧=(1−𝑧²)^(−1\\/2)
+  mathml: |
+    <math display="block"><mrow><mfrac intent=":derivative(1,$f,𝑧)"><mi intent="ⅆ">𝑑</mi><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑧</mi></mrow></mfrac><mrow arg="f"><mrow intent=":function"><mi>arcsin</mi><mo>⁡</mo><mi>𝑧</mi></mrow></mrow><mo>=</mo><msup><mrow intent=":fenced"><mo>(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>𝑧</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow><mrow><mo>−</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></msup></mrow></math>
+
 - unicodemath: 1ⅆ(tan x)/ⅆx = 1/cos▒^2 x
   mathml: |
-    <math display="block"><mrow><mfrac intent="derivative($f,1,x)"><mrow><mi intent="ⅆ">𝑑</mi><mrow arg="f" intent=":fenced"><mo>(</mo><mrow intent=":function"><mi>tan</mi><mo>&ApplyFunction;</mo><mi>𝑥</mi></mrow><mo>)</mo></mrow></mrow><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow intent=":function"><msup><mi>cos</mi><mn>2</mn></msup><mo>&ApplyFunction;</mo><mi>𝑥</mi></mrow></mfrac></mrow></math>
+    <math display="block"><mrow><mfrac intent=":derivative(1,$f,x)"><mrow><mi intent="ⅆ">𝑑</mi><mrow arg="f" intent=":fenced"><mo>(</mo><mrow intent=":function"><mi>tan</mi><mo>⁡</mo><mi>𝑥</mi></mrow><mo>)</mo></mrow></mrow><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow intent=":function"><msup><mi>cos</mi><mn>2</mn></msup><mo>⁡</mo><mi>𝑥</mi></mrow></mfrac></mrow></math>
 
 - unicodemath: 1ⅆx
   mathml: |
@@ -1779,15 +1806,31 @@ tests:
 
 - unicodemath: 1ⅆy/ⅆx=[y-G(x)]/a(x,y)
   mathml: |
-    <math display="block"><mrow><mfrac intent="derivative(y,1,x)"><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑦</mi></mrow><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mfrac><mo>=</mo><mfrac><mrow intent=":fenced"><mo>[</mo><mrow><mi>𝑦</mi><mo>−</mo><mrow><mi>𝐺</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow></mrow><mo>]</mo></mrow><mrow><mi>𝑎</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><mi>𝑦</mi></mrow><mo>)</mo></mrow></mrow></mfrac></mrow></math>
+    <math display="block"><mrow><mfrac intent=":derivative(1,y,x)"><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑦</mi></mrow><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mfrac><mo>=</mo><mfrac><mrow intent=":fenced"><mo>[</mo><mrow><mi>𝑦</mi><mo>−</mo><mrow><mi>𝐺</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow></mrow><mo>]</mo></mrow><mrow><mi>𝑎</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><mi>𝑦</mi></mrow><mo>)</mo></mrow></mrow></mfrac></mrow></math>
 
 - unicodemath: 1ⅆy/ⅆx=[y-G(x)]/a(x,y).
   mathml: |
-    <math display="block"><mrow><mfrac intent="derivative(y,1,x)"><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑦</mi></mrow><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mfrac><mo>=</mo><mfrac><mrow intent=":fenced"><mo>[</mo><mrow><mi>𝑦</mi><mo>−</mo><mrow><mi>𝐺</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow></mrow><mo>]</mo></mrow><mrow><mi>𝑎</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><mi>𝑦</mi></mrow><mo>)</mo></mrow></mrow></mfrac><mo>.</mo></mrow></math>
+    <math display="block"><mrow><mfrac intent=":derivative(1,y,x)"><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑦</mi></mrow><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mfrac><mo>=</mo><mfrac><mrow intent=":fenced"><mo>[</mo><mrow><mi>𝑦</mi><mo>−</mo><mrow><mi>𝐺</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow></mrow><mo>]</mo></mrow><mrow><mi>𝑎</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><mi>𝑦</mi></mrow><mo>)</mo></mrow></mrow></mfrac><mo>.</mo></mrow></math>
 
 - unicodemath: 1ⅆy/ⅆx=[y-G(x)]/a(x,y). + \\int_1\\of a
   mathml: |
-    <math display="block"><mrow><mfrac intent="derivative(y,1,x)"><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑦</mi></mrow><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mfrac><mo>=</mo><mfrac><mrow intent=":fenced"><mo>[</mo><mrow><mi>𝑦</mi><mo>−</mo><mrow><mi>𝐺</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow></mrow><mo>]</mo></mrow><mrow><mi>𝑎</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><mi>𝑦</mi></mrow><mo>)</mo></mrow></mrow></mfrac><mo>.</mo><mo>+</mo><mrow intent="integral(1,,$n)"><msub><mo>∫</mo><mn>1</mn></msub><mrow arg="n"><mi>𝑎</mi></mrow></mrow></mrow></math>
+    <math display="block"><mrow><mfrac intent=":derivative(1,y,x)"><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑦</mi></mrow><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mfrac><mo>=</mo><mfrac><mrow intent=":fenced"><mo>[</mo><mrow><mi>𝑦</mi><mo>−</mo><mrow><mi>𝐺</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow></mrow><mo>]</mo></mrow><mrow><mi>𝑎</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><mi>𝑦</mi></mrow><mo>)</mo></mrow></mrow></mfrac><mo>.</mo><mo>+</mo><mrow intent=":integral(1,,$n)"><msub><mo>∫</mo><mn>1</mn></msub><mrow arg="n"><mi>𝑎</mi></mrow></mrow></mrow></math>
+
+- unicodemath: 1ⅆ²𝛾^∗/ⅆ𝑧²≠ⅆ𝛾^∗/ⅆ𝑧
+  mathml: |
+    <math display="block"><mrow><mfrac intent=":derivative(2,$f,𝑧)"><mrow><msup><mi intent="ⅆ">𝑑</mi><mn>2</mn></msup><msup arg="f"><mi>𝛾</mi><mo>∗</mo></msup></mrow><mrow><mi intent="ⅆ">𝑑</mi><msup><mi>𝑧</mi><mn>2</mn></msup></mrow></mfrac><mo>≠</mo><mfrac intent=":derivative(1,$f,𝑧)"><mrow><mi intent="ⅆ">𝑑</mi><msup arg="f"><mi>𝛾</mi><mo>∗</mo></msup></mrow><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑧</mi></mrow></mfrac></mrow></math>
+
+- unicodemath: 1ⅆ²𝛾′/ⅆ𝑧²≠ⅆ𝛾′/ⅆ𝑧≠ⅆ^2 𝛾′/ⅆ𝑧²
+  mathml: |
+    <math display="block"><mrow><mfrac intent=":derivative(2,$f,𝑧)"><mrow><msup><mi intent="ⅆ">𝑑</mi><mn>2</mn></msup><msup arg="f"><mi>𝛾</mi><mo>′</mo></msup></mrow><mrow><mi intent="ⅆ">𝑑</mi><msup><mi>𝑧</mi><mn>2</mn></msup></mrow></mfrac><mo>≠</mo><mfrac intent=":derivative(1,$f,𝑧)"><mrow><mi intent="ⅆ">𝑑</mi><msup arg="f"><mi>𝛾</mi><mo>′</mo></msup></mrow><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑧</mi></mrow></mfrac><mo>≠</mo><mfrac intent=":derivative(2,$f,𝑧)"><mrow><msup><mi intent="ⅆ">𝑑</mi><mn>2</mn></msup><msup arg="f"><mi>𝛾</mi><mo>′</mo></msup></mrow><mrow><mi intent="ⅆ">𝑑</mi><msup><mi>𝑧</mi><mn>2</mn></msup></mrow></mfrac></mrow></math>
+
+- unicodemath: 1ⅆ𝑓₁/ⅆ𝑧+𝑓₁⁡(𝑓₂−𝑓₃)+2⁢𝜇₁=0
+  mathml: |
+    <math display="block"><mrow><mfrac intent=":derivative(1,$f,𝑧)"><mrow><mi intent="ⅆ">𝑑</mi><msub arg="f"><mi>𝑓</mi><mn>1</mn></msub></mrow><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑧</mi></mrow></mfrac><mo>+</mo><msub><mi>𝑓</mi><mn>1</mn></msub><mo>⁡</mo><mrow intent=":fenced"><mo>(</mo><mrow><msub><mi>𝑓</mi><mn>2</mn></msub><mo>−</mo><msub><mi>𝑓</mi><mn>3</mn></msub></mrow><mo>)</mo></mrow><mo>+</mo><mn>2</mn><mo>⁢</mo><msub><mi>𝜇</mi><mn>1</mn></msub><mo>=</mo><mn>0</mn></mrow></math>
+
+- unicodemath: 1ⅆ²𝛾′₁/ⅆ𝑧²
+  mathml: |
+    <math display="block"><mfrac intent=":derivative(2,$f,𝑧)"><mrow><msup><mi intent="ⅆ">𝑑</mi><mn>2</mn></msup><msubsup arg="f"><mi>𝛾</mi><mn>1</mn><mo>′</mo></msubsup></mrow><mrow><mi intent="ⅆ">𝑑</mi><msup><mi>𝑧</mi><mn>2</mn></msup></mrow></mfrac></math>
 
 - unicodemath: 1ⅇ
   mathml: |
@@ -1807,7 +1850,7 @@ tests:
 
 - unicodemath: 1↉½⅓⅔¼¾⅕⅖⅗⅘⅙⅚⅐⅛⅜⅝⅞⅑
   mathml: |
-    <math display="block"><mrow><mstyle displaystyle="false"><mfrac><mn>0</mn><mn>3</mn></mfrac></mstyle><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>3</mn></mfrac></mstyle><mstyle displaystyle="false"><mfrac><mn>2</mn><mn>3</mn></mfrac></mstyle><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle><mstyle displaystyle="false"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>5</mn></mfrac></mstyle><mstyle displaystyle="false"><mfrac><mn>2</mn><mn>5</mn></mfrac></mstyle><mstyle displaystyle="false"><mfrac><mn>3</mn><mn>5</mn></mfrac></mstyle><mstyle displaystyle="false"><mfrac><mn>4</mn><mn>5</mn></mfrac></mstyle><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>6</mn></mfrac></mstyle><mstyle displaystyle="false"><mfrac><mn>5</mn><mn>6</mn></mfrac></mstyle><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>7</mn></mfrac></mstyle><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>8</mn></mfrac></mstyle><mstyle displaystyle="false"><mfrac><mn>3</mn><mn>8</mn></mfrac></mstyle><mstyle displaystyle="false"><mfrac><mn>5</mn><mn>8</mn></mfrac></mstyle><mstyle displaystyle="false"><mfrac><mn>7</mn><mn>8</mn></mfrac></mstyle><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>9</mn></mfrac></mstyle></mrow></math>
+    <math display="block"><mrow><mfrac displaystyle="false"><mn>0</mn><mn>3</mn></mfrac><mfrac displaystyle="false"><mn>1</mn><mn>2</mn></mfrac><mfrac displaystyle="false"><mn>1</mn><mn>3</mn></mfrac><mfrac displaystyle="false"><mn>2</mn><mn>3</mn></mfrac><mfrac displaystyle="false"><mn>1</mn><mn>4</mn></mfrac><mfrac displaystyle="false"><mn>3</mn><mn>4</mn></mfrac><mfrac displaystyle="false"><mn>1</mn><mn>5</mn></mfrac><mfrac displaystyle="false"><mn>2</mn><mn>5</mn></mfrac><mfrac displaystyle="false"><mn>3</mn><mn>5</mn></mfrac><mfrac displaystyle="false"><mn>4</mn><mn>5</mn></mfrac><mfrac displaystyle="false"><mn>1</mn><mn>6</mn></mfrac><mfrac displaystyle="false"><mn>5</mn><mn>6</mn></mfrac><mfrac displaystyle="false"><mn>1</mn><mn>7</mn></mfrac><mfrac displaystyle="false"><mn>1</mn><mn>8</mn></mfrac><mfrac displaystyle="false"><mn>3</mn><mn>8</mn></mfrac><mfrac displaystyle="false"><mn>5</mn><mn>8</mn></mfrac><mfrac displaystyle="false"><mn>7</mn><mn>8</mn></mfrac><mfrac displaystyle="false"><mn>1</mn><mn>9</mn></mfrac></mrow></math>
 
 - unicodemath: 1→┴(𝑎 + 𝑏)
   mathml: |
@@ -1867,27 +1910,27 @@ tests:
 
 - unicodemath: 1∏_(k=0)^n▒n⒞k = H²(n)/(n!)^(n+1) = (∏_(h=0)^n▒h^h)/(n!)^(n+1)
   mathml: |
-    <math display="block"><mrow><mrow intent="product($l,𝑛,$n)"><munderover><mo>∏</mo><mrow arg="l"><mi>𝑘</mi><mo>=</mo><mn>0</mn></mrow><mi>𝑛</mi></munderover><mrow arg="n" intent="binomial-coefficient(𝑛,𝑘)"><mo>(</mo><mfrac linethickness="0"><mi>𝑛</mi><mi>𝑘</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><msup><mi>𝐻</mi><mn>2</mn></msup><mrow intent=":fenced"><mo>(</mo><mi>𝑛</mi><mo>)</mo></mrow></mrow><msup><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑛</mi><mo>!</mo></mrow><mo>)</mo></mrow><mrow><mi>𝑛</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac><mo>=</mo><mfrac><mrow intent="product($l,𝑛,$n)"><munderover><mo>∏</mo><mrow arg="l"><mi>ℎ</mi><mo>=</mo><mn>0</mn></mrow><mi>𝑛</mi></munderover><mrow arg="n"><msup><mi>ℎ</mi><mi>ℎ</mi></msup></mrow></mrow><msup><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑛</mi><mo>!</mo></mrow><mo>)</mo></mrow><mrow><mi>𝑛</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac></mrow></math>
+    <math display="block"><mrow><mrow intent=":product($l,𝑛,$n)"><munderover><mo>∏</mo><mrow arg="l"><mi>𝑘</mi><mo>=</mo><mn>0</mn></mrow><mi>𝑛</mi></munderover><mrow arg="n" intent="binomial-coefficient(𝑛,𝑘)"><mo>(</mo><mfrac linethickness="0"><mi>𝑛</mi><mi>𝑘</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><msup><mi>𝐻</mi><mn>2</mn></msup><mrow intent=":fenced"><mo>(</mo><mi>𝑛</mi><mo>)</mo></mrow></mrow><msup><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑛</mi><mo>!</mo></mrow><mo>)</mo></mrow><mrow><mi>𝑛</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac><mo>=</mo><mfrac><mrow intent=":product($l,𝑛,$n)"><munderover><mo>∏</mo><mrow arg="l"><mi>ℎ</mi><mo>=</mo><mn>0</mn></mrow><mi>𝑛</mi></munderover><mrow arg="n"><msup><mi>ℎ</mi><mi>ℎ</mi></msup></mrow></mrow><msup><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑛</mi><mo>!</mo></mrow><mo>)</mo></mrow><mrow><mi>𝑛</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac></mrow></math>
 
 - unicodemath: 1∑_1\\of (\\forall y\\exists 1) ⫷if resolveCW == true⫸
   mathml: |
-    <math display="block"><mrow><mrow intent="sum(1,,$n)"><munder><mo>∑</mo><mn>1</mn></munder><mrow arg="n"><mrow intent=":fenced"><mo>(</mo><mrow><mo>∀</mo><mi>𝑦</mi><mo>∃</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></mrow></mrow></math>
+    <math display="block"><mrow><mrow intent=":sum(1,,$n)"><munder><mo>∑</mo><mn>1</mn></munder><mrow arg="n"><mrow intent=":fenced"><mo>(</mo><mrow><mo>∀</mo><mi>𝑦</mi><mo>∃</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></mrow></mrow></math>
 
 - unicodemath: 1(𝑎+𝑏)^𝑛=∑_(𝑘=0)^𝑛 𝑛⒞𝑘 𝑎^𝑘 𝑏^(𝑛−𝑘)
   mathml: |
-    <math display="block"><mrow><msup><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑎</mi><mo>+</mo><mi>𝑏</mi></mrow><mo>)</mo></mrow><mi>𝑛</mi></msup><mo>=</mo><mrow intent="sum($l,𝑛,$n)"><munderover><mo>∑</mo><mrow arg="l"><mi>𝑘</mi><mo>=</mo><mn>0</mn></mrow><mi>𝑛</mi></munderover><mrow arg="n"><mrow intent="binomial-coefficient(𝑛,𝑘)"><mo>(</mo><mfrac linethickness="0"><mi>𝑛</mi><mi>𝑘</mi></mfrac><mo>)</mo></mrow><msup><mi>𝑎</mi><mi>𝑘</mi></msup><msup><mi>𝑏</mi><mrow><mi>𝑛</mi><mo>−</mo><mi>𝑘</mi></mrow></msup></mrow></mrow></mrow></math>
+    <math display="block"><mrow><msup><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑎</mi><mo>+</mo><mi>𝑏</mi></mrow><mo>)</mo></mrow><mi>𝑛</mi></msup><mo>=</mo><mrow intent=":sum($l,𝑛,$n)"><munderover><mo>∑</mo><mrow arg="l"><mi>𝑘</mi><mo>=</mo><mn>0</mn></mrow><mi>𝑛</mi></munderover><mrow arg="n"><mrow intent="binomial-coefficient(𝑛,𝑘)"><mo>(</mo><mfrac linethickness="0"><mi>𝑛</mi><mi>𝑘</mi></mfrac><mo>)</mo></mrow><msup><mi>𝑎</mi><mi>𝑘</mi></msup><msup><mi>𝑏</mi><mrow><mi>𝑛</mi><mo>−</mo><mi>𝑘</mi></mrow></msup></mrow></mrow></mrow></math>
 
 - unicodemath: 1∑┬Ω▒Δα²
   mathml: |
-    <math display="block"><mrow intent="sum(Ω,,$n)"><munder><mo>∑</mo><mi mathvariant="normal">Ω</mi></munder><mrow arg="n"><mrow><mi mathvariant="normal">Δ</mi><msup><mi>𝛼</mi><mn>2</mn></msup></mrow></mrow></mrow></math>
+    <math display="block"><mrow intent=":sum(Ω,,$n)"><munder><mo>∑</mo><mi mathvariant="normal">Ω</mi></munder><mrow arg="n"><mrow><mi mathvariant="normal">Δ</mi><msup><mi>𝛼</mi><mn>2</mn></msup></mrow></mrow></mrow></math>
 
 - unicodemath: 1∑┬α▒β
   mathml: |
-    <math display="block"><mrow intent="sum(𝛼,,$n)"><munder><mo>∑</mo><mi>𝛼</mi></munder><mrow arg="n"><mi>𝛽</mi></mrow></mrow></math>
+    <math display="block"><mrow intent=":sum(𝛼,,$n)"><munder><mo>∑</mo><mi>𝛼</mi></munder><mrow arg="n"><mi>𝛽</mi></mrow></mrow></math>
 
 - unicodemath: 1∑_(𝑘=𝑎⁴)^𝑎² 𝑎^𝑘=0
   mathml: |
-    <math display="block"><mrow><mrow intent="sum($l,$h,$n)"><munderover><mo>∑</mo><mrow arg="l"><mi>𝑘</mi><mo>=</mo><msup><mi>𝑎</mi><mn>4</mn></msup></mrow><mrow arg="h"><msup><mi>𝑎</mi><mn>2</mn></msup></mrow></munderover><mrow arg="n"><msup><mi>𝑎</mi><mi>𝑘</mi></msup></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>
+    <math display="block"><mrow><mrow intent=":sum($l,$h,$n)"><munderover><mo>∑</mo><mrow arg="l"><mi>𝑘</mi><mo>=</mo><msup><mi>𝑎</mi><mn>4</mn></msup></mrow><mrow arg="h"><msup><mi>𝑎</mi><mn>2</mn></msup></mrow></munderover><mrow arg="n"><msup><mi>𝑎</mi><mi>𝑘</mi></msup></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>
 
 - unicodemath: 1√2
   mathml: |
@@ -1933,7 +1976,7 @@ tests:
   mathml: |
     <math display="block"><mo>∧</mo></math>
 
-- unicodemath: "1∧ : 𝒢_n × 𝒢_m → 𝒢_{n+m}"
+- unicodemath: 1∧ : 𝒢_n × 𝒢_m → 𝒢_{n+m}
   mathml: |
     <math display="block"><mrow><mo>∧</mo><mo>:</mo><msub><mi>𝒢</mi><mi>𝑛</mi></msub><mo>×</mo><msub><mi>𝒢</mi><mi>𝑚</mi></msub><mo stretchy="true">→</mo><msub><mi>𝒢</mi><mrow intent=":fenced"><mo>{</mo><mrow><mi>𝑛</mi><mo>+</mo><mi>𝑚</mi></mrow><mo>}</mo></mrow></msub></mrow></math>
 
@@ -1943,47 +1986,51 @@ tests:
 
 - unicodemath: 1∫0_a^b▒x
   mathml: |
-    <math display="block"><mrow intent="integral(𝑎,𝑏,$n)"><msubsup><mo>∫</mo><mi>𝑎</mi><mi>𝑏</mi></msubsup><mrow arg="n"><mi>𝑥</mi></mrow></mrow></math>
+    <math display="block"><mrow intent=":integral(𝑎,𝑏,$n)"><msubsup><mo>∫</mo><mi>𝑎</mi><mi>𝑏</mi></msubsup><mrow arg="n"><mi>𝑥</mi></mrow></mrow></math>
 
 - unicodemath: 1∫1_a^b▒x
   mathml: |
-    <math display="block"><mrow intent="integral(𝑎,𝑏,$n)"><munderover><mo>∫</mo><mi>𝑎</mi><mi>𝑏</mi></munderover><mrow arg="n"><mi>𝑥</mi></mrow></mrow></math>
+    <math display="block"><mrow intent=":integral(𝑎,𝑏,$n)"><munderover><mo>∫</mo><mi>𝑎</mi><mi>𝑏</mi></munderover><mrow arg="n"><mi>𝑥</mi></mrow></mrow></math>
 
 - unicodemath: 1∫2_a^b▒x
   mathml: |
-    <math display="block"><mrow intent="integral(𝑎,𝑏,$n)"><msubsup><mo>∫</mo><mi>𝑎</mi><mi>𝑏</mi></msubsup><mrow arg="n"><mi>𝑥</mi></mrow></mrow></math>
+    <math display="block"><mrow intent=":integral(𝑎,𝑏,$n)"><msubsup><mo>∫</mo><mi>𝑎</mi><mi>𝑏</mi></msubsup><mrow arg="n"><mi>𝑥</mi></mrow></mrow></math>
 
 - unicodemath: 1∫3_a^b▒x
   mathml: |
-    <math display="block"><mrow intent="integral(𝑎,𝑏,$n)"><msubsup><mo>∫</mo><mi>𝑎</mi><mi>𝑏</mi></msubsup><mrow arg="n"><mi>𝑥</mi></mrow></mrow></math>
+    <math display="block"><mrow intent=":integral(𝑎,𝑏,$n)"><msubsup><mo>∫</mo><mi>𝑎</mi><mi>𝑏</mi></msubsup><mrow arg="n"><mi>𝑥</mi></mrow></mrow></math>
 
 - unicodemath: 1∫3┬(n→∞)┴b▒x
   mathml: |
-    <math display="block"><mrow intent="integral($l,,$n)"><munder><msup><mo>∫</mo><mi>𝑏</mi></msup><mrow arg="l"><mi>𝑛</mi><mo stretchy="true">→</mo><mi>∞</mi></mrow></munder><mrow arg="n"><mi>𝑥</mi></mrow></mrow></math>
+    <math display="block"><mrow intent=":integral($l,,$n)"><munder><msup><mo>∫</mo><mi>𝑏</mi></msup><mrow arg="l"><mi>𝑛</mi><mo stretchy="true">→</mo><mi>∞</mi></mrow></munder><mrow arg="n"><mi>𝑥</mi></mrow></mrow></math>
 
 - unicodemath: 1∫4_a^b▒x
   mathml: |
-    <math display="block"><mrow intent="integral(𝑏,𝑎,$n)"><msubsup><mo>∫</mo><mi>𝑏</mi><mi>𝑎</mi></msubsup><mrow arg="n"><mi>𝑥</mi></mrow></mrow></math>
+    <math display="block"><mrow intent=":integral(𝑏,𝑎,$n)"><msubsup><mo>∫</mo><mi>𝑏</mi><mi>𝑎</mi></msubsup><mrow arg="n"><mi>𝑥</mi></mrow></mrow></math>
 
 - unicodemath: 1∫64_a▒(1/2/3/4)
   mathml: |
-    <math display="block"><mrow intent="integral(𝑎,,$n)"><msub><mo>∫</mo><mi>𝑎</mi></msub><mpadded arg="n" height="1em"><mrow intent=":fenced"><mo>(</mo><mfrac><mfrac><mfrac><mn>1</mn><mn>2</mn></mfrac><mn>3</mn></mfrac><mn>4</mn></mfrac><mo>)</mo></mrow></mpadded></mrow></math>
+    <math display="block"><mrow intent=":integral(𝑎,,$n)"><msub><mo>∫</mo><mi>𝑎</mi></msub><mpadded arg="n" height="0"><mrow intent=":fenced"><mo>(</mo><mfrac><mfrac><mfrac><mn>1</mn><mn>2</mn></mfrac><mn>3</mn></mfrac><mn>4</mn></mfrac><mo>)</mo></mrow></mpadded></mrow></math>
 
 - unicodemath: 1∫^α₂
   mathml: |
     <math display="block"><msup><mo>∫</mo><msub><mi>𝛼</mi><mn>2</mn></msub></msup></math>
 
+- unicodemath: 1∫_0^2𝜋 ∫_0^𝜋 𝑓(𝜃,𝜙)sin 𝜃 ⅆ𝜃 ⅆ𝜙
+  mathml: |
+    <math display="block"><mrow intent=":integral(0,$h,$n)"><msubsup><mo>∫</mo><mn>0</mn><mrow arg="h"><mn>2</mn><mi>𝜋</mi></mrow></msubsup><mrow arg="n"><mrow intent=":integral(0,𝜋,$n)"><msubsup><mo>∫</mo><mn>0</mn><mi>𝜋</mi></msubsup><mrow arg="n"><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝜃</mi><mo>,</mo><mi>𝜙</mi></mrow><mo>)</mo></mrow><mrow intent=":function"><mi>sin</mi><mo>⁡</mo><mi>𝜃</mi></mrow><mrow><mi intent="ⅆ">𝑑</mi><mi>𝜃</mi></mrow></mrow></mrow><mrow><mi intent="ⅆ">𝑑</mi><mi>𝜙</mi></mrow></mrow></mrow></math>
+
 - unicodemath: 1∫_0^a▒(xⅆx/(x^2+a^2))
   mathml: |
-    <math display="block"><mrow intent="integral(0,𝑎,$n)"><msubsup><mo>∫</mo><mn>0</mn><mi>𝑎</mi></msubsup><mrow arg="n"><mrow intent=":fenced"><mo>(</mo><mfrac><mrow><mi>𝑥</mi><mi> </mi><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow><mrow><msup><mi>𝑥</mi><mn>2</mn></msup><mo>+</mo><msup><mi>𝑎</mi><mn>2</mn></msup></mrow></mfrac><mo>)</mo></mrow></mrow></mrow></math>
+    <math display="block"><mrow intent=":integral(0,𝑎,$n)"><msubsup><mo>∫</mo><mn>0</mn><mi>𝑎</mi></msubsup><mrow arg="n"><mrow intent=":fenced"><mo>(</mo><mfrac><mrow><mi>𝑥</mi><mi> </mi><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow><mrow><msup><mi>𝑥</mi><mn>2</mn></msup><mo>+</mo><msup><mi>𝑎</mi><mn>2</mn></msup></mrow></mfrac><mo>)</mo></mrow></mrow></mrow></math>
 
 - unicodemath: 1∫_0^a▒〖xⅆx/(x^2+a^2)〗
   mathml: |
-    <math display="block"><mrow intent="integral(0,𝑎,$n)"><msubsup><mo>∫</mo><mn>0</mn><mi>𝑎</mi></msubsup><mrow arg="n"><mrow intent=":fenced"><mo></mo><mfrac><mrow><mi>𝑥</mi><mi> </mi><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow><mrow><msup><mi>𝑥</mi><mn>2</mn></msup><mo>+</mo><msup><mi>𝑎</mi><mn>2</mn></msup></mrow></mfrac><mo></mo></mrow></mrow></mrow></math>
+    <math display="block"><mrow intent=":integral(0,𝑎,$n)"><msubsup><mo>∫</mo><mn>0</mn><mi>𝑎</mi></msubsup><mrow arg="n"><mrow intent=":fenced"><mo></mo><mfrac><mrow><mi>𝑥</mi><mi> </mi><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow><mrow><msup><mi>𝑥</mi><mn>2</mn></msup><mo>+</mo><msup><mi>𝑎</mi><mn>2</mn></msup></mrow></mfrac><mo></mo></mrow></mrow></mrow></math>
 
 - unicodemath: 1∫_1^t▒〖ⅆx/x〗#(42)
   mathml: |
-    <math display="block"><mtable><mlabeledtr id="-42-"><mtd><mtext>(42)</mtext></mtd><mtd><mrow intent="integral(1,𝑡,$n)"><msubsup><mo>∫</mo><mn>1</mn><mi>𝑡</mi></msubsup><mrow arg="n"><mrow intent=":fenced"><mo></mo><mfrac><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow><mi>𝑥</mi></mfrac><mo></mo></mrow></mrow></mrow></mtd></mlabeledtr></mtable></math>
+    <math display="block"><mtable><mlabeledtr id="-42-"><mtd><mtext>(42)</mtext></mtd><mtd><mrow intent=":integral(1,𝑡,$n)"><msubsup><mo>∫</mo><mn>1</mn><mi>𝑡</mi></msubsup><mrow arg="n"><mrow intent=":fenced"><mo></mo><mfrac><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow><mi>𝑥</mi></mfrac><mo></mo></mrow></mrow></mrow></mtd></mlabeledtr></mtable></math>
 
 - unicodemath: 1∫_-∞^▢(+∞)
   mathml: |
@@ -1995,15 +2042,15 @@ tests:
 
 - unicodemath: 1∫₀²⁰ √x ⅆx
   mathml: |
-    <math display="block"><mrow><mrow intent="integral(0,20,$n)"><msubsup><mo>∫</mo><mn>0</mn><mn>20</mn></msubsup><mrow arg="n"><msqrt><mi>𝑥</mi></msqrt></mrow></mrow><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mrow></math>
+    <math display="block"><mrow intent=":integral(0,20,$n)"><msubsup><mo>∫</mo><mn>0</mn><mn>20</mn></msubsup><mrow arg="n"><msqrt><mi>𝑥</mi></msqrt><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mrow></mrow></math>
 
 - unicodemath: 1∮16_α▒β
   mathml: |
-    <math display="block"><mrow intent="contour integral(𝛼,,$n)"><msubsup><mo>∮</mo><mi>𝛼</mi><mo>⬚</mo></msubsup><mrow arg="n"><mi>𝛽</mi></mrow></mrow></math>
+    <math display="block"><mrow intent=":contour integral(𝛼,,$n)"><msubsup><mo>∮</mo><mi>𝛼</mi><mo>⬚</mo></msubsup><mrow arg="n"><mi>𝛽</mi></mrow></mrow></math>
 
 - unicodemath: 1∰_1^n▒f(x)
   mathml: |
-    <math display="block"><mrow intent="volume integral(1,𝑛,$n)"><msubsup><mo>∰</mo><mn>1</mn><mi>𝑛</mi></msubsup><mrow arg="n"><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow></mrow></math>
+    <math display="block"><mrow intent=":volume integral(1,𝑛,$n)"><msubsup><mo>∰</mo><mn>1</mn><mi>𝑛</mi></msubsup><mrow arg="n"><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow></mrow></math>
 
 - unicodemath: 1≝   \\approx  =┴"def"
   mathml: |
@@ -2015,43 +2062,43 @@ tests:
 
 - unicodemath: 1⎴(sin(a))^("test")
   mathml: |
-    <math display="block"><mover accent="true"><mover accent="true"><mrow intent=":function"><mi>sin</mi><mo>&ApplyFunction;</mo><mrow intent=":fenced"><mo>(</mo><mi>𝑎</mi><mo>)</mo></mrow></mrow><mo stretchy="true">⎴</mo></mover><mtext>test</mtext></mover></math>
+    <math display="block"><mover><mover><mrow intent=":function"><mi>sin</mi><mo>⁡</mo><mrow intent=":fenced"><mo>(</mo><mi>𝑎</mi><mo>)</mo></mrow></mrow><mo stretchy="true">⎴</mo></mover><mtext>test</mtext></mover></math>
 
 - unicodemath: 1⏜α
   mathml: |
-    <math display="block"><mover accent="true"><mi>𝛼</mi><mo stretchy="true">⏜</mo></mover></math>
+    <math display="block"><mover><mi>𝛼</mi><mo stretchy="true">⏜</mo></mover></math>
 
 - unicodemath: 1⏝(a_1 + b_1) + ⏝(a_2 + b_2) + ⏝(a_3 + b_3)
   mathml: |
-    <math display="block"><mrow><munder accentunder="true"><mrow><msub><mi>𝑎</mi><mn>1</mn></msub><mo>+</mo><msub><mi>𝑏</mi><mn>1</mn></msub></mrow><mo stretchy="true">⏝</mo></munder><mo>+</mo><munder accentunder="true"><mrow><msub><mi>𝑎</mi><mn>2</mn></msub><mo>+</mo><msub><mi>𝑏</mi><mn>2</mn></msub></mrow><mo stretchy="true">⏝</mo></munder><mo>+</mo><munder accentunder="true"><mrow><msub><mi>𝑎</mi><mn>3</mn></msub><mo>+</mo><msub><mi>𝑏</mi><mn>3</mn></msub></mrow><mo stretchy="true">⏝</mo></munder></mrow></math>
+    <math display="block"><mrow><munder><mrow><msub><mi>𝑎</mi><mn>1</mn></msub><mo>+</mo><msub><mi>𝑏</mi><mn>1</mn></msub></mrow><mo stretchy="true">⏝</mo></munder><mo>+</mo><munder><mrow><msub><mi>𝑎</mi><mn>2</mn></msub><mo>+</mo><msub><mi>𝑏</mi><mn>2</mn></msub></mrow><mo stretchy="true">⏝</mo></munder><mo>+</mo><munder><mrow><msub><mi>𝑎</mi><mn>3</mn></msub><mo>+</mo><msub><mi>𝑏</mi><mn>3</mn></msub></mrow><mo stretchy="true">⏝</mo></munder></mrow></math>
 
 - unicodemath: 1⏞(x+⋯+x)^(k " times")
   mathml: |
-    <math display="block"><mover accent="true"><mover accent="true"><mrow><mi>𝑥</mi><mo>+</mo><mo>⋯</mo><mo>+</mo><mi>𝑥</mi></mrow><mo stretchy="true">⏞</mo></mover><mrow><mi>𝑘</mi><mtext> times</mtext></mrow></mover></math>
+    <math display="block"><mover><mover><mrow><mi>𝑥</mi><mo>+</mo><mo>⋯</mo><mo>+</mo><mi>𝑥</mi></mrow><mo stretchy="true">⏞</mo></mover><mrow><mi>𝑘</mi><mtext> times</mtext></mrow></mover></math>
 
 - unicodemath: 1⏞(x_1+⋯+x_k)^(k " times")
   mathml: |
-    <math display="block"><mover accent="true"><mover accent="true"><mrow><msub><mi>𝑥</mi><mn>1</mn></msub><mo>+</mo><mo>⋯</mo><mo>+</mo><msub><mi>𝑥</mi><mi>𝑘</mi></msub></mrow><mo stretchy="true">⏞</mo></mover><mrow><mi>𝑘</mi><mtext> times</mtext></mrow></mover></math>
+    <math display="block"><mover><mover><mrow><msub><mi>𝑥</mi><mn>1</mn></msub><mo>+</mo><mo>⋯</mo><mo>+</mo><msub><mi>𝑥</mi><mi>𝑘</mi></msub></mrow><mo stretchy="true">⏞</mo></mover><mrow><mi>𝑘</mi><mtext> times</mtext></mrow></mover></math>
 
 - unicodemath: 1⏟(a^c_b)_(⏟(a^c_b)_(⏟(a^c_b)_(⏟(a^c_b)_(⏟(a^c_b)_(d)))))
   mathml: |
-    <math display="block"><munder accentunder="true"><munder accentunder="true"><msubsup><mi>𝑎</mi><mi>𝑏</mi><mi>𝑐</mi></msubsup><mo stretchy="true">⏟</mo></munder><munder accentunder="true"><munder accentunder="true"><msubsup><mi>𝑎</mi><mi>𝑏</mi><mi>𝑐</mi></msubsup><mo stretchy="true">⏟</mo></munder><munder accentunder="true"><munder accentunder="true"><msubsup><mi>𝑎</mi><mi>𝑏</mi><mi>𝑐</mi></msubsup><mo stretchy="true">⏟</mo></munder><munder accentunder="true"><munder accentunder="true"><msubsup><mi>𝑎</mi><mi>𝑏</mi><mi>𝑐</mi></msubsup><mo stretchy="true">⏟</mo></munder><munder accentunder="true"><munder accentunder="true"><msubsup><mi>𝑎</mi><mi>𝑏</mi><mi>𝑐</mi></msubsup><mo stretchy="true">⏟</mo></munder><mi>𝑑</mi></munder></munder></munder></munder></munder></math>
+    <math display="block"><munder><munder><msubsup><mi>𝑎</mi><mi>𝑏</mi><mi>𝑐</mi></msubsup><mo stretchy="true">⏟</mo></munder><munder><munder><msubsup><mi>𝑎</mi><mi>𝑏</mi><mi>𝑐</mi></msubsup><mo stretchy="true">⏟</mo></munder><munder><munder><msubsup><mi>𝑎</mi><mi>𝑏</mi><mi>𝑐</mi></msubsup><mo stretchy="true">⏟</mo></munder><munder><munder><msubsup><mi>𝑎</mi><mi>𝑏</mi><mi>𝑐</mi></msubsup><mo stretchy="true">⏟</mo></munder><munder><munder><msubsup><mi>𝑎</mi><mi>𝑏</mi><mi>𝑐</mi></msubsup><mo stretchy="true">⏟</mo></munder><mi>𝑑</mi></munder></munder></munder></munder></munder></math>
 
 - unicodemath: 1⏟abc_1
   mathml: |
-    <math display="block"><munder accentunder="true"><mrow><mrow><mi>𝑎</mi><mi>𝑏</mi></mrow><msub><mi>𝑐</mi><mn>1</mn></msub></mrow><mo stretchy="true">⏟</mo></munder></math>
+    <math display="block"><munder><mrow><mrow><mi>𝑎</mi><mi>𝑏</mi></mrow><msub><mi>𝑐</mi><mn>1</mn></msub></mrow><mo stretchy="true">⏟</mo></munder></math>
 
 - unicodemath: 1⏟def┬2
   mathml: |
-    <math display="block"><munder accentunder="true"><munder accentunder="true"><mi>def</mi><mo stretchy="true">⏟</mo></munder><mn>2</mn></munder></math>
+    <math display="block"><munder><munder><mi>def</mi><mo stretchy="true">⏟</mo></munder><mn>2</mn></munder></math>
 
 - unicodemath: 1⏟α_β
   mathml: |
-    <math display="block"><munder accentunder="true"><munder accentunder="true"><mi>𝛼</mi><mo stretchy="true">⏟</mo></munder><mi>𝛽</mi></munder></math>
+    <math display="block"><munder><munder><mi>𝛼</mi><mo stretchy="true">⏟</mo></munder><mi>𝛽</mi></munder></math>
 
 - unicodemath: 1⏠(⏟(x+⋯+x)_(k " times and stuff"))^("test"_2_2_2_2_2_2_2_2_2_2_2_2_2_2_2_2)
   mathml: |
-    <math display="block"><mover accent="true"><mover accent="true"><munder accentunder="true"><munder accentunder="true"><mrow><mi>𝑥</mi><mo>+</mo><mo>⋯</mo><mo>+</mo><mi>𝑥</mi></mrow><mo stretchy="true">⏟</mo></munder><mrow><mi>𝑘</mi><mtext> times and stuff</mtext></mrow></munder><mo stretchy="true">⏠</mo></mover><msub><mtext>test</mtext><msub><msub><msub><msub><msub><msub><msub><msub><msub><msub><msub><msub><msub><msub><msub><mn>2</mn><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub></msub></mover></math>
+    <math display="block"><mover><mover><munder><munder><mrow><mi>𝑥</mi><mo>+</mo><mo>⋯</mo><mo>+</mo><mi>𝑥</mi></mrow><mo stretchy="true">⏟</mo></munder><mrow><mi>𝑘</mi><mtext> times and stuff</mtext></mrow></munder><mo stretchy="true">⏠</mo></mover><msub><mtext>test</mtext><msub><msub><msub><msub><msub><msub><msub><msub><msub><msub><msub><msub><msub><msub><msub><mn>2</mn><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub><mn>2</mn></msub></msub></mover></math>
 
 - unicodemath: 1⒜(⒜x - ⒜y)
   mathml: |
@@ -2063,7 +2110,7 @@ tests:
 
 - unicodemath: 1Ⓒ(a@b)
   mathml: |
-    <math display="block"><mrow intent="cases"><mo>{</mo><mtable intent=":equations" columnalign="right"><mtr><mtd><maligngroup /><mi>𝑎</mi></mtd></mtr><mtr><mtd><maligngroup /><mi>𝑏</mi></mtd></mtr></mtable><mo></mo></mrow></math>
+    <math display="block"><mrow intent=":cases"><mo>{</mo><mtable intent=":equations" columnalign="right"><mtr><mtd><maligngroup /><mi>𝑎</mi></mtd></mtr><mtr><mtd><maligngroup /><mi>𝑏</mi></mtd></mtr></mtable><mo></mo></mrow></math>
 
 - unicodemath: 1ⓘ("$op($a)"ⓐ(a 𝐴)^ⓐopⓘ("transpose"𝑇))=0
   mathml: |
@@ -2089,9 +2136,9 @@ tests:
   mathml: |
     <math display="block"><mrow intent="cardinality"><mo>|</mo><mi>𝑥</mi><mo>|</mo></mrow></math>
 
-- unicodemath: 1ⓘ("derivative"𝑓′(𝑥))
+- unicodemath: 1ⓘ(":derivative"𝑓′(𝑥))
   mathml: |
-    <math display="block"><mrow><msup intent="derivative"><mi>𝑓</mi><mo>′</mo></msup><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow></math>
+    <math display="block"><mrow intent=":derivative(1,𝑓(𝑥),𝑥)"><msup><mi>𝑓</mi><mo>′</mo></msup><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow></math>
 
 - unicodemath: 1ⓘ("index"a^2)
   mathml: |
@@ -2105,25 +2152,29 @@ tests:
   mathml: |
     <math display="block"><mrow intent="quadratic equation"><mi>𝑥</mi><mo>=</mo><mfrac><mrow><mo>−</mo><mi>𝑏</mi><mo>±</mo><msqrt><mrow><msup><mi>𝑏</mi><mn>2</mn></msup><mo>−</mo><mrow><mn>4</mn><mrow><mi>𝑎</mi><mi>𝑐</mi></mrow></mrow></mrow></msqrt></mrow><mrow><mn>2</mn><mi>𝑎</mi></mrow></mfrac></mrow></math>
 
+- unicodemath: 1ⓘ(":sup"𝑎²)
+  mathml: |
+    <math display="block"><msup intent=":sup"><mi>𝑎</mi><mn>2</mn></msup></math>
+
 - unicodemath: 1ⓘ("time derivative"𝜌̇)
   mathml: |
     <math display="block"><mrow intent="time derivative"><mover accent="true"><mi>𝜌</mi><mo>&#x307;</mo></mover></mrow></math>
 
 - unicodemath: 1⒨(a & b& c&d @ c& d )
   mathml: |
-    <math display="block"><mrow intent=":fenced"><mo>(</mo><mtable intent="matrix"><mtr><mtd><mi>𝑎</mi></mtd><mtd><mi>𝑏</mi></mtd><mtd><mi>𝑐</mi></mtd><mtd><mi>𝑑</mi></mtd></mtr><mtr><mtd><mi>𝑐</mi></mtd><mtd><mi>𝑑</mi></mtd></mtr></mtable><mo>)</mo></mrow></math>
+    <math display="block"><mrow intent=":parenthesized-matrix"><mo>(</mo><mtable intent=":matrix(2,4)"><mtr><mtd><mi>𝑎</mi></mtd><mtd><mi>𝑏</mi></mtd><mtd><mi>𝑐</mi></mtd><mtd><mi>𝑑</mi></mtd></mtr><mtr><mtd><mi>𝑐</mi></mtd><mtd><mi>𝑑</mi></mtd></mtr></mtable><mo>)</mo></mrow></math>
 
 - unicodemath: 1⒨(a&b&c&d@c&d)
   mathml: |
-    <math display="block"><mrow intent=":fenced"><mo>(</mo><mtable intent="matrix"><mtr><mtd><mi>𝑎</mi></mtd><mtd><mi>𝑏</mi></mtd><mtd><mi>𝑐</mi></mtd><mtd><mi>𝑑</mi></mtd></mtr><mtr><mtd><mi>𝑐</mi></mtd><mtd><mi>𝑑</mi></mtd></mtr></mtable><mo>)</mo></mrow></math>
+    <math display="block"><mrow intent=":parenthesized-matrix"><mo>(</mo><mtable intent=":matrix(2,4)"><mtr><mtd><mi>𝑎</mi></mtd><mtd><mi>𝑏</mi></mtd><mtd><mi>𝑐</mi></mtd><mtd><mi>𝑑</mi></mtd></mtr><mtr><mtd><mi>𝑐</mi></mtd><mtd><mi>𝑑</mi></mtd></mtr></mtable><mo>)</mo></mrow></math>
 
 - unicodemath: 1⒨(a&b@c&d)/=⒩(a&b@c&d)/=ⓢ(a&b@c&d)/=Ⓢ(a&b@c&d)/=⒱(a&b@c&d)
   mathml: |
-    <math display="block"><mrow><mrow intent=":fenced"><mo>(</mo><mtable intent="matrix"><mtr><mtd><mi>𝑎</mi></mtd><mtd><mi>𝑏</mi></mtd></mtr><mtr><mtd><mi>𝑐</mi></mtd><mtd><mi>𝑑</mi></mtd></mtr></mtable><mo>)</mo></mrow><mo>≠</mo><mrow intent=":fenced"><mo>‖</mo><mtable intent="matrix"><mtr><mtd><mi>𝑎</mi></mtd><mtd><mi>𝑏</mi></mtd></mtr><mtr><mtd><mi>𝑐</mi></mtd><mtd><mi>𝑑</mi></mtd></mtr></mtable><mo>‖</mo></mrow><mo>≠</mo><mrow intent=":fenced"><mo>[</mo><mtable intent="matrix"><mtr><mtd><mi>𝑎</mi></mtd><mtd><mi>𝑏</mi></mtd></mtr><mtr><mtd><mi>𝑐</mi></mtd><mtd><mi>𝑑</mi></mtd></mtr></mtable><mo>]</mo></mrow><mo>≠</mo><mrow intent=":fenced"><mo>{</mo><mtable intent="matrix"><mtr><mtd><mi>𝑎</mi></mtd><mtd><mi>𝑏</mi></mtd></mtr><mtr><mtd><mi>𝑐</mi></mtd><mtd><mi>𝑑</mi></mtd></mtr></mtable><mo>}</mo></mrow><mo>≠</mo><mrow intent="determinant"><mo>|</mo><mtable intent="matrix"><mtr><mtd><mi>𝑎</mi></mtd><mtd><mi>𝑏</mi></mtd></mtr><mtr><mtd><mi>𝑐</mi></mtd><mtd><mi>𝑑</mi></mtd></mtr></mtable><mo>|</mo></mrow></mrow></math>
+    <math display="block"><mrow><mrow intent=":parenthesized-matrix"><mo>(</mo><mtable intent=":matrix(2,2)"><mtr><mtd><mi>𝑎</mi></mtd><mtd><mi>𝑏</mi></mtd></mtr><mtr><mtd><mi>𝑐</mi></mtd><mtd><mi>𝑑</mi></mtd></mtr></mtable><mo>)</mo></mrow><mo>≠</mo><mrow intent=":normed-matrix"><mo>‖</mo><mtable intent=":matrix(2,2)"><mtr><mtd><mi>𝑎</mi></mtd><mtd><mi>𝑏</mi></mtd></mtr><mtr><mtd><mi>𝑐</mi></mtd><mtd><mi>𝑑</mi></mtd></mtr></mtable><mo>‖</mo></mrow><mo>≠</mo><mrow intent=":bracketed-matrix"><mo>[</mo><mtable intent=":matrix(2,2)"><mtr><mtd><mi>𝑎</mi></mtd><mtd><mi>𝑏</mi></mtd></mtr><mtr><mtd><mi>𝑐</mi></mtd><mtd><mi>𝑑</mi></mtd></mtr></mtable><mo>]</mo></mrow><mo>≠</mo><mrow intent=":curly-braced-matrix"><mo>{</mo><mtable intent=":matrix(2,2)"><mtr><mtd><mi>𝑎</mi></mtd><mtd><mi>𝑏</mi></mtd></mtr><mtr><mtd><mi>𝑐</mi></mtd><mtd><mi>𝑑</mi></mtd></mtr></mtable><mo>}</mo></mrow><mo>≠</mo><mrow intent=":determinant"><mo>|</mo><mtable intent=":matrix(2,2)"><mtr><mtd><mi>𝑎</mi></mtd><mtd><mi>𝑏</mi></mtd></mtr><mtr><mtd><mi>𝑐</mi></mtd><mtd><mi>𝑑</mi></mtd></mtr></mtable><mo>|</mo></mrow></mrow></math>
 
 - unicodemath: 1⒨3
   mathml: |
-    <math display="block"><mrow intent=":fenced"><mo>(</mo><mtable intent="matrix"><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>)</mo></mrow></math>
+    <math display="block"><mrow intent=":parenthesized-matrix"><mo>(</mo><mtable intent=":matrix(3,3)"><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>)</mo></mrow></math>
 
 - unicodemath: 1├1]1/2┤4[
   mathml: |
@@ -2239,7 +2290,7 @@ tests:
 
 - unicodemath: 1○(sin(α))
   mathml: |
-    <math display="block"><menclose notation="circle"><mrow intent=":function"><mi>sin</mi><mo>&ApplyFunction;</mo><mrow intent=":fenced"><mo>(</mo><mi>𝛼</mi><mo>)</mo></mrow></mrow></menclose></math>
+    <math display="block"><menclose notation="circle"><mrow intent=":function"><mi>sin</mi><mo>⁡</mo><mrow intent=":fenced"><mo>(</mo><mi>𝛼</mi><mo>)</mo></mrow></mrow></menclose></math>
 
 - unicodemath: 1○α
   mathml: |
@@ -2271,7 +2322,7 @@ tests:
 
 - unicodemath: 1✎(#e01f32&α)⊘✎(#18a199&β)
   mathml: |
-    <math display="block"><mstyle displaystyle="false"><mfrac><mstyle mathcolor="#e01f32"><mi>𝛼</mi></mstyle><mstyle mathcolor="#18a199"><mi>𝛽</mi></mstyle></mfrac></mstyle></math>
+    <math display="block"><mfrac displaystyle="false"><mstyle mathcolor="#e01f32"><mi>𝛼</mi></mstyle><mstyle mathcolor="#18a199"><mi>𝛽</mi></mstyle></mfrac></math>
 
 - unicodemath: 1✎(rebeccapurple&6)
   mathml: |
@@ -2313,33 +2364,33 @@ tests:
   mathml: |
     <math display="block"><mrow><msub><mrow intent=":fenced"><mo>⟨</mo><mrow><msub><mi>𝛼</mi><mn>1</mn></msub><mo>+</mo><mrow><msub><mi>𝛼</mi><mi>𝑥</mi></msub><mi>𝑥</mi></mrow><mo>+</mo><mrow><msub><mi>𝛼</mi><mi>𝑦</mi></msub><mi>𝑦</mi></mrow><mo>+</mo><mrow><msub><mi>𝛼</mi><mi>𝑧</mi></msub><mi>𝑧</mi></mrow><mo>+</mo><mrow><msub><mi>𝛼</mi><mrow><mi>𝑦</mi><mi>𝑧</mi></mrow></msub><mrow><mi>𝑦</mi><mi>𝑧</mi></mrow></mrow><mo>+</mo><mrow><msub><mi>𝛼</mi><mrow><mi>𝑧</mi><mi>𝑥</mi></mrow></msub><mi>𝑧</mi></mrow><mi>𝑥</mi><mo>+</mo><mrow><msub><mi>𝛼</mi><mrow><mi>𝑥</mi><mi>𝑦</mi></mrow></msub><mi>𝑥</mi></mrow><mi>𝑦</mi><mo>+</mo><mrow><msub><mi>𝛼</mi><mrow><mi>𝑥</mi><mi>𝑦</mi><mi>𝑧</mi></mrow></msub><mi>𝑥</mi></mrow><mi>𝑦</mi><mi>𝑧</mi></mrow><mo>⟩</mo></mrow><mrow><mo>−</mo><mn>5</mn></mrow></msub><mo>=</mo><mn>0</mn></mrow></math>
 
-- unicodemath: "1⟨⟩_+ : 𝒢 → 𝒢_+"
+- unicodemath: 1⟨⟩_+ : 𝒢 → 𝒢_+
   mathml: |
     <math display="block"><mrow><msub><mrow intent=":fenced"><mo>⟨</mo><mspace width="0" /><mo>⟩</mo></mrow><mo>+</mo></msub><mo>:</mo><mi>𝒢</mi><mo stretchy="true">→</mo><msub><mi>𝒢</mi><mo>+</mo></msub></mrow></math>
 
-- unicodemath: "1⟨⟩_- : 𝒢 → 𝒢_-"
+- unicodemath: 1⟨⟩_- : 𝒢 → 𝒢_-
   mathml: |
     <math display="block"><mrow><msub><mrow intent=":fenced"><mo>⟨</mo><mspace width="0" /><mo>⟩</mo></mrow><mo>−</mo></msub><mo>:</mo><mi>𝒢</mi><mo stretchy="true">→</mo><msub><mi>𝒢</mi><mo>−</mo></msub></mrow></math>
 
-- unicodemath: "1⟨⟩_r : 𝒢 → 𝒢_r"
+- unicodemath: 1⟨⟩_r : 𝒢 → 𝒢_r
   mathml: |
     <math display="block"><mrow><msub><mrow intent=":fenced"><mo>⟨</mo><mspace width="0" /><mo>⟩</mo></mrow><mi>𝑟</mi></msub><mo>:</mo><mi>𝒢</mi><mo stretchy="true">→</mo><msub><mi>𝒢</mi><mi>𝑟</mi></msub></mrow></math>
 
 - unicodemath: 1⨄▒α
   mathml: |
-    <math display="block"><mrow intent="n-ary(,,$n)"><mo>⨄</mo><mrow arg="n"><mi>𝛼</mi></mrow></mrow></math>
+    <math display="block"><mrow intent=":n-ary(,,$n)"><mo>⨄</mo><mrow arg="n"><mi>𝛼</mi></mrow></mrow></math>
 
 - unicodemath: 1⨌1_a\\of b\\cdot c
   mathml: |
-    <math display="block"><mrow><mrow intent="quadruple integral(𝑎,,$n)"><munder><mo>⨌</mo><mi>𝑎</mi></munder><mrow arg="n"><mi>𝑏</mi></mrow></mrow><mo>⋅</mo><mi>𝑐</mi></mrow></math>
+    <math display="block"><mrow><mrow intent=":quadruple integral(𝑎,,$n)"><munder><mo>⨌</mo><mi>𝑎</mi></munder><mrow arg="n"><mi>𝑏</mi></mrow></mrow><mo>⋅</mo><mi>𝑐</mi></mrow></math>
 
 - unicodemath: 1⨌1_a\\of ⨌62^a\\of b\\cdot c
   mathml: |
-    <math display="block"><mrow><mrow intent="quadruple integral(𝑎,,$n)"><munder><mo>⨌</mo><mi>𝑎</mi></munder><mrow arg="n" intent="quadruple integral(𝑎,,$n)"><msubsup><mo>⨌</mo><mi>𝑎</mi><mo>⬚</mo></msubsup><mrow arg="n"><mi>𝑏</mi></mrow></mrow></mrow><mo>⋅</mo><mi>𝑐</mi></mrow></math>
+    <math display="block"><mrow><mrow intent=":quadruple integral(𝑎,,$n)"><munder><mo>⨌</mo><mi>𝑎</mi></munder><mrow arg="n" intent=":quadruple integral(𝑎,,$n)"><msubsup><mo>⨌</mo><mi>𝑎</mi><mo>⬚</mo></msubsup><mrow arg="n"><mi>𝑏</mi></mrow></mrow></mrow><mo>⋅</mo><mi>𝑐</mi></mrow></math>
 
 - unicodemath: 1⨌_a\\of b\\cdot c
   mathml: |
-    <math display="block"><mrow><mrow intent="quadruple integral(𝑎,,$n)"><munder><mo>⨌</mo><mi>𝑎</mi></munder><mrow arg="n"><mi>𝑏</mi></mrow></mrow><mo>⋅</mo><mi>𝑐</mi></mrow></math>
+    <math display="block"><mrow><mrow intent=":quadruple integral(𝑎,,$n)"><msub><mo>⨌</mo><mi>𝑎</mi></msub><mrow arg="n"><mi>𝑏</mi></mrow></mrow><mo>⋅</mo><mi>𝑐</mi></mrow></math>
 
 - unicodemath: 1⫷primes overhaul end⫸
   mathml: |
@@ -2371,7 +2422,7 @@ tests:
 
 - unicodemath: 1⬌(⬆(a/b/c/d/e))+b
   mathml: |
-    <math display="block"><mrow><mpadded width="0"><mpadded height="1em"><mfrac><mfrac><mfrac><mfrac><mi>𝑎</mi><mi>𝑏</mi></mfrac><mi>𝑐</mi></mfrac><mi>𝑑</mi></mfrac><mi>𝑒</mi></mfrac></mpadded></mpadded><mo>+</mo><mi>𝑏</mi></mrow></math>
+    <math display="block"><mrow><mpadded width="0"><mpadded height="0"><mfrac><mfrac><mfrac><mfrac><mi>𝑎</mi><mi>𝑏</mi></mfrac><mi>𝑐</mi></mfrac><mi>𝑑</mi></mfrac><mi>𝑒</mi></mfrac></mpadded></mpadded><mo>+</mo><mi>𝑏</mi></mrow></math>
 
 - unicodemath: 1⬍(a/b/c/d/e/f)+c
   mathml: |
@@ -2395,35 +2446,43 @@ tests:
 
 - unicodemath: 1𝑑²𝑓(𝑥)/𝑑𝑥²=0
   mathml: |
-    <math display="block"><mrow><mfrac intent="derivative($f,2,𝑥)"><mrow><msup><mi>𝑑</mi><mn>2</mn></msup><mrow arg="f"><mi>𝑓</mi><mo>&ApplyFunction;</mo><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow></mrow><mrow><mi>𝑑</mi><msup><mi>𝑥</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mn>0</mn></mrow></math>
+    <math display="block"><mrow><mfrac intent=":derivative(2,$f,𝑥)"><mrow><msup><mi>𝑑</mi><mn>2</mn></msup><mrow arg="f"><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow></mrow><mrow><mi>𝑑</mi><msup><mi>𝑥</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mn>0</mn></mrow></math>
 
 - unicodemath: 1𝜕^(𝑛−1) 𝑓(𝑥,𝑦)/𝜕𝑥^(𝑛−1) =0
   mathml: |
-    <math display="block"><mrow><mfrac intent="partial-derivative($f,$n,𝑥)"><mrow><msup><mi>𝜕</mi><mrow arg="n"><mi>𝑛</mi><mo>−</mo><mn>1</mn></mrow></msup><mrow arg="f"><mi>𝑓</mi><mo>&ApplyFunction;</mo><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><mi>𝑦</mi></mrow><mo>)</mo></mrow></mrow></mrow><mrow><mi>𝜕</mi><msup><mi>𝑥</mi><mrow><mi>𝑛</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></mfrac><mo>=</mo><mn>0</mn></mrow></math>
+    <math display="block"><mrow><mfrac intent=":partial-derivative($n,$f,𝑥)"><mrow><msup><mi>𝜕</mi><mrow arg="n"><mi>𝑛</mi><mo>−</mo><mn>1</mn></mrow></msup><mrow arg="f"><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><mi>𝑦</mi></mrow><mo>)</mo></mrow></mrow></mrow><mrow><mi>𝜕</mi><msup><mi>𝑥</mi><mrow><mi>𝑛</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></mfrac><mo>=</mo><mn>0</mn></mrow></math>
+
+- unicodemath: 1𝜕²𝑓(𝑥,𝑥′)/𝜕𝑥𝜕𝑥′=0
+  mathml: |
+    <math display="block"><mrow><mfrac intent=":partial-derivative(2,$f,𝑥,𝑥′)"><mrow><msup><mi>𝜕</mi><mn>2</mn></msup><mrow arg="f"><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><msup><mi>𝑥</mi><mo>′</mo></msup></mrow><mo>)</mo></mrow></mrow></mrow><mrow><mrow><mi>𝜕</mi><mi>𝑥</mi><mi>𝜕</mi></mrow><msup><mi>𝑥</mi><mo>′</mo></msup></mrow></mfrac><mo>=</mo><mn>0</mn></mrow></math>
 
 - unicodemath: 1𝑖ℏ 𝜕𝜓(𝑥,𝑡)/𝜕𝑡 =[−ℏ²/2𝑚 𝜕²/𝜕𝑥²+𝑉(𝑥,𝑡)]𝜓(𝑥,𝑡)
   mathml: |
-    <math display="block"><mrow><mrow><mi>𝑖</mi><mi>ℏ</mi></mrow><mfrac intent="partial-derivative($f,1,𝑡)"><mrow><mi>𝜕</mi><mrow arg="f"><mi>𝜓</mi><mo>&ApplyFunction;</mo><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><mi>𝑡</mi></mrow><mo>)</mo></mrow></mrow></mrow><mrow><mi>𝜕</mi><mi>𝑡</mi></mrow></mfrac><mo>=</mo><mrow><mrow intent=":fenced"><mo>[</mo><mrow><mo>−</mo><mfrac><msup><mi>ℏ</mi><mn>2</mn></msup><mrow><mn>2</mn><mi>𝑚</mi></mrow></mfrac><mfrac intent="partial-derivative(,2,𝑥)"><msup><mi>𝜕</mi><mn>2</mn></msup><mrow><mi>𝜕</mi><msup><mi>𝑥</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mrow><mi>𝑉</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><mi>𝑡</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>]</mo></mrow><mi>𝜓</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><mi>𝑡</mi></mrow><mo>)</mo></mrow></mrow></mrow></math>
+    <math display="block"><mrow><mrow><mi>𝑖</mi><mi>ℏ</mi></mrow><mfrac intent=":partial-derivative(1,$f,𝑡)"><mrow><mi>𝜕</mi><mrow arg="f"><mi>𝜓</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><mi>𝑡</mi></mrow><mo>)</mo></mrow></mrow></mrow><mrow><mi>𝜕</mi><mi>𝑡</mi></mrow></mfrac><mo>=</mo><mrow><mrow intent=":fenced"><mo>[</mo><mrow><mo>−</mo><mfrac><msup><mi>ℏ</mi><mn>2</mn></msup><mrow><mn>2</mn><mi>𝑚</mi></mrow></mfrac><mfrac intent=":partial-derivative(2,,𝑥)"><msup><mi>𝜕</mi><mn>2</mn></msup><mrow><mi>𝜕</mi><msup><mi>𝑥</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mrow><mi>𝑉</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><mi>𝑡</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>]</mo></mrow><mi>𝜓</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><mi>𝑡</mi></mrow><mo>)</mo></mrow></mrow></mrow></math>
 
 - unicodemath: 1𝜕𝑓(𝑥,𝑦)/𝜕𝑥=0
   mathml: |
-    <math display="block"><mrow><mfrac intent="partial-derivative($f,1,𝑥)"><mrow><mi>𝜕</mi><mrow arg="f"><mi>𝑓</mi><mo>&ApplyFunction;</mo><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><mi>𝑦</mi></mrow><mo>)</mo></mrow></mrow></mrow><mrow><mi>𝜕</mi><mi>𝑥</mi></mrow></mfrac><mo>=</mo><mn>0</mn></mrow></math>
+    <math display="block"><mrow><mfrac intent=":partial-derivative(1,$f,𝑥)"><mrow><mi>𝜕</mi><mrow arg="f"><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><mi>𝑦</mi></mrow><mo>)</mo></mrow></mrow></mrow><mrow><mi>𝜕</mi><mi>𝑥</mi></mrow></mfrac><mo>=</mo><mn>0</mn></mrow></math>
 
 - unicodemath: 1𝜕²𝜓(𝑥,𝑡)/𝜕𝑥𝜕𝑡=0
   mathml: |
-    <math display="block"><mrow><mfrac intent="partial-derivative($f,2,𝑥,𝑡)"><mrow><msup><mi>𝜕</mi><mn>2</mn></msup><mrow arg="f"><mi>𝜓</mi><mo>&ApplyFunction;</mo><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><mi>𝑡</mi></mrow><mo>)</mo></mrow></mrow></mrow><mrow><mi>𝜕</mi><mi>𝑥</mi><mi>𝜕</mi><mi>𝑡</mi></mrow></mfrac><mo>=</mo><mn>0</mn></mrow></math>
+    <math display="block"><mrow><mfrac intent=":partial-derivative(2,$f,𝑥,𝑡)"><mrow><msup><mi>𝜕</mi><mn>2</mn></msup><mrow arg="f"><mi>𝜓</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><mi>𝑡</mi></mrow><mo>)</mo></mrow></mrow></mrow><mrow><mi>𝜕</mi><mi>𝑥</mi><mi>𝜕</mi><mi>𝑡</mi></mrow></mfrac><mo>=</mo><mn>0</mn></mrow></math>
 
 - unicodemath: 1𝜕³𝜓(𝑥,𝑦,𝑡)/𝜕𝑥𝜕𝑦𝜕𝑡=0
   mathml: |
-    <math display="block"><mrow><mfrac intent="partial-derivative($f,3,𝑥,𝑦,𝑡)"><mrow><msup><mi>𝜕</mi><mn>3</mn></msup><mrow arg="f"><mi>𝜓</mi><mo>&ApplyFunction;</mo><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><mi>𝑦</mi><mo>,</mo><mi>𝑡</mi></mrow><mo>)</mo></mrow></mrow></mrow><mrow><mi>𝜕</mi><mi>𝑥</mi><mi>𝜕</mi><mi>𝑦</mi><mi>𝜕</mi><mi>𝑡</mi></mrow></mfrac><mo>=</mo><mn>0</mn></mrow></math>
+    <math display="block"><mrow><mfrac intent=":partial-derivative(3,$f,𝑥,𝑦,𝑡)"><mrow><msup><mi>𝜕</mi><mn>3</mn></msup><mrow arg="f"><mi>𝜓</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><mi>𝑦</mi><mo>,</mo><mi>𝑡</mi></mrow><mo>)</mo></mrow></mrow></mrow><mrow><mi>𝜕</mi><mi>𝑥</mi><mi>𝜕</mi><mi>𝑦</mi><mi>𝜕</mi><mi>𝑡</mi></mrow></mfrac><mo>=</mo><mn>0</mn></mrow></math>
 
 - unicodemath: 1𝜕²/𝜕𝑥² 𝜓(𝑥,𝑡)=0
   mathml: |
-    <math display="block"><mrow><mfrac intent="partial-derivative($f,2,𝑥)"><msup><mi>𝜕</mi><mn>2</mn></msup><mrow><mi>𝜕</mi><msup><mi>𝑥</mi><mn>2</mn></msup></mrow></mfrac><mrow arg="f"><mi>𝜓</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><mi>𝑡</mi></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>
+    <math display="block"><mrow><mfrac intent=":partial-derivative(2,$f,𝑥)"><msup><mi>𝜕</mi><mn>2</mn></msup><mrow><mi>𝜕</mi><msup><mi>𝑥</mi><mn>2</mn></msup></mrow></mfrac><mrow arg="f"><mi>𝜓</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><mi>𝑡</mi></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>
 
 - unicodemath: 1𝜕²/𝜕𝑥² 𝜓=0
   mathml: |
-    <math display="block"><mrow><mfrac intent="partial-derivative($f,2,𝑥)"><msup><mi>𝜕</mi><mn>2</mn></msup><mrow><mi>𝜕</mi><msup><mi>𝑥</mi><mn>2</mn></msup></mrow></mfrac><mi arg="$f">𝜓</mi><mo>=</mo><mn>0</mn></mrow></math>
+    <math display="block"><mrow><mfrac intent=":partial-derivative(2,$f,𝑥)"><msup><mi>𝜕</mi><mn>2</mn></msup><mrow><mi>𝜕</mi><msup><mi>𝑥</mi><mn>2</mn></msup></mrow></mfrac><mi arg="$f">𝜓</mi><mo>=</mo><mn>0</mn></mrow></math>
+
+- unicodemath: 1𝜕_𝑥𝑥′ 𝑓(𝑥,𝑥′)=𝜕²𝑓(𝑥,𝑥′)/𝜕𝑥𝜕𝑥′
+  mathml: |
+    <math display="block"><mrow><mrow intent=":partial-derivative(2,$f,𝑥,𝑥′)"><msub><mi>𝜕</mi><mrow><mi>𝑥</mi><msup><mi>𝑥</mi><mo>′</mo></msup></mrow></msub><mrow arg="f"><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><msup><mi>𝑥</mi><mo>′</mo></msup></mrow><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mfrac intent=":partial-derivative(2,$f,𝑥,𝑥′)"><mrow><msup><mi>𝜕</mi><mn>2</mn></msup><mrow arg="f"><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑥</mi><mo>,</mo><msup><mi>𝑥</mi><mo>′</mo></msup></mrow><mo>)</mo></mrow></mrow></mrow><mrow><mrow><mi>𝜕</mi><mi>𝑥</mi><mi>𝜕</mi></mrow><msup><mi>𝑥</mi><mo>′</mo></msup></mrow></mfrac></mrow></math>
 
 - unicodemath: 1𝑊^3𝛽_𝛿₁𝜌₂𝜎₃
   mathml: |
@@ -2445,9 +2504,21 @@ tests:
   mathml: |
     <math display="block"><msubsup><mi>𝑊</mi><mrow><msub><mi>𝛿</mi><mn>1</mn></msub><msup><mi>𝜌</mi><mi>𝑛</mi></msup><mi>𝜎</mi></mrow><mn>2</mn></msubsup></math>
 
+- unicodemath: 1𝑍(𝛾+𝑖𝜔−𝑖𝜈)=𝑖/√𝜋 ∫_−∞^∞ 𝑒^(−(𝜔−𝜔′)^2 \\/(Δ𝜔)^2)/(𝛾+𝑖(𝜔′−𝜈)) ⅆ𝜔′
+  mathml: |
+    <math display="block"><mrow><mrow><mi>𝑍</mi><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝛾</mi><mo>+</mo><mrow><mi>𝑖</mi><mi>𝜔</mi></mrow><mo>−</mo><mrow><mi>𝑖</mi><mi>𝜈</mi></mrow></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mfrac><mi>𝑖</mi><msqrt><mi>𝜋</mi></msqrt></mfrac><mrow intent=":integral($l,∞,$n)"><msubsup><mo>∫</mo><mrow arg="l"><mo>−</mo><mi>∞</mi></mrow><mi>∞</mi></msubsup><mrow arg="n"><mfrac><msup><mi>𝑒</mi><mrow><mo>−</mo><mrow><msup><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝜔</mi><mo>−</mo><msup><mi>𝜔</mi><mo>′</mo></msup></mrow><mo>)</mo></mrow><mn>2</mn></msup><mo>/</mo><msup><mrow intent=":fenced"><mo>(</mo><mrow><mi>Δ</mi><mi>𝜔</mi></mrow><mo>)</mo></mrow><mn>2</mn></msup></mrow></mrow></msup><mrow><mi>𝛾</mi><mo>+</mo><mrow><mi>𝑖</mi><mrow intent=":fenced"><mo>(</mo><mrow><msup><mi>𝜔</mi><mo>′</mo></msup><mo>−</mo><mi>𝜈</mi></mrow><mo>)</mo></mrow></mrow></mrow></mfrac><mrow><mi intent="ⅆ">𝑑</mi><msup><mi>𝜔</mi><mo>′</mo></msup></mrow></mrow></mrow></mrow></math>
+
+- unicodemath: 1𝑎+¹/₂₀+⁵⁶/₆₂₅=0
+  mathml: |
+    <math display="block"><mrow><mi>𝑎</mi><mo>+</mo><mfrac displaystyle="false"><mn>1</mn><mn>20</mn></mfrac><mo>+</mo><mfrac displaystyle="false"><mn>56</mn><mn>625</mn></mfrac><mo>=</mo><mn>0</mn></mrow></math>
+
 - unicodemath: 1𝑎
   mathml: |
     <math display="block"><mi>𝑎</mi></math>
+
+- unicodemath: 1𝑥𝑎̂𝑏𝑐̃𝑦=0
+  mathml: |
+    <math display="block"><mrow><mrow><mi>𝑥</mi><mover accent="true"><mi>𝑎</mi><mo>&#x302;</mo></mover><mi>𝑏</mi><mover accent="true"><mi>𝑐</mi><mo>&#x303;</mo></mover><mi>𝑦</mi></mrow><mo>=</mo><mn>0</mn></mrow></math>
 
 - unicodemath: 1𝒢
   mathml: |
@@ -2479,11 +2550,15 @@ tests:
 
 - unicodemath: 1𝜌 = ∑_𝜓▒P_𝜓 |𝜓⟩⟨𝜓| + 1
   mathml: |
-    <math display="block"><mrow><mi>𝜌</mi><mo>=</mo><mrow intent="sum(𝜓,,$n)"><munder><mo>∑</mo><mi>𝜓</mi></munder><mrow arg="n"><msub><mi>𝑃</mi><mi>𝜓</mi></msub><mrow intent=":fenced"><mo>|</mo><mi>𝜓</mi><mo>⟩</mo></mrow><mrow intent=":fenced"><mo>⟨</mo><mi>𝜓</mi><mo>|</mo></mrow></mrow></mrow><mo>+</mo><mn>1</mn></mrow></math>
+    <math display="block"><mrow><mi>𝜌</mi><mo>=</mo><mrow intent=":sum(𝜓,,$n)"><munder><mo>∑</mo><mi>𝜓</mi></munder><mrow arg="n"><msub><mi>𝑃</mi><mi>𝜓</mi></msub><mrow intent=":fenced"><mo>|</mo><mi>𝜓</mi><mo>⟩</mo></mrow><mrow intent=":fenced"><mo>⟨</mo><mi>𝜓</mi><mo>|</mo></mrow></mrow></mrow><mo>+</mo><mn>1</mn></mrow></math>
 
 - unicodemath: 1𝜌 = ∑_𝜓▒P_𝜓 |𝜓⟩⟨𝜓| ,
   mathml: |
-    <math display="block"><mrow><mi>𝜌</mi><mo>=</mo><mrow intent="sum(𝜓,,$n)"><munder><mo>∑</mo><mi>𝜓</mi></munder><mrow arg="n"><msub><mi>𝑃</mi><mi>𝜓</mi></msub><mrow intent=":fenced"><mo>|</mo><mi>𝜓</mi><mo>⟩</mo></mrow><mrow intent=":fenced"><mo>⟨</mo><mi>𝜓</mi><mo>|</mo></mrow></mrow></mrow><mo>,</mo></mrow></math>
+    <math display="block"><mrow><mi>𝜌</mi><mo>=</mo><mrow intent=":sum(𝜓,,$n)"><munder><mo>∑</mo><mi>𝜓</mi></munder><mrow arg="n"><msub><mi>𝑃</mi><mi>𝜓</mi></msub><mrow intent=":fenced"><mo>|</mo><mi>𝜓</mi><mo>⟩</mo></mrow><mrow intent=":fenced"><mo>⟨</mo><mi>𝜓</mi><mo>|</mo></mrow></mrow></mrow><mo>,</mo></mrow></math>
+
+- unicodemath: 1𝜃₁⁡(𝑧│𝜏)=𝜃₁⁡(𝑧,𝑞)=2⁢∑_(𝑛=0)^∞ (−1)^𝑛 ⁢𝑞^(𝑛+1/2)² ⁢sin⁡((2⁢𝑛+1)⁢𝑧),
+  mathml: |
+    <math display="block"><mrow><msub><mi>𝜃</mi><mn>1</mn></msub><mo>⁡</mo><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑧</mi><mo>│</mo><mi>𝜏</mi></mrow><mo>)</mo></mrow><mo>=</mo><msub><mi>𝜃</mi><mn>1</mn></msub><mo>⁡</mo><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑧</mi><mo>,</mo><mi>𝑞</mi></mrow><mo>)</mo></mrow><mo>=</mo><mn>2</mn><mo>⁢</mo><mrow intent=":sum($l,∞,$n)"><munderover><mo>∑</mo><mrow arg="l"><mi>𝑛</mi><mo>=</mo><mn>0</mn></mrow><mi>∞</mi></munderover><mrow arg="n"><msup><mrow intent=":fenced"><mo>(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow><mi>𝑛</mi></msup></mrow></mrow><mo>⁢</mo><msup><mi>𝑞</mi><msup><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑛</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>)</mo></mrow><mn>2</mn></msup></msup><mo>⁢</mo><mrow intent=":function"><mi>sin</mi><mo>⁡</mo><mrow intent=":fenced"><mo>(</mo><mrow><mrow intent=":fenced"><mo>(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>𝑛</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>⁢</mo><mi>𝑧</mi></mrow><mo>)</mo></mrow></mrow><mo>,</mo></mrow></math>
 
 - unicodemath: 1𝟙+𝟚
   mathml: |
@@ -2503,7 +2578,7 @@ tests:
 
 - unicodemath: 1𝛁⨯𝐄=−𝜕𝐁/𝜕𝑡
   mathml: |
-    <math display="block"><mrow><mi>𝛁</mi><mo>⨯</mo><mi>𝐄</mi><mo>=</mo><mo>−</mo><mfrac intent="partial-derivative(𝐁,1,𝑡)"><mrow><mi>𝜕</mi><mi>𝐁</mi></mrow><mrow><mi>𝜕</mi><mi>𝑡</mi></mrow></mfrac></mrow></math>
+    <math display="block"><mrow><mi>𝛁</mi><mo>⨯</mo><mi>𝐄</mi><mo>=</mo><mo>−</mo><mfrac intent=":partial-derivative(1,𝐁,𝑡)"><mrow><mi>𝜕</mi><mi>𝐁</mi></mrow><mrow><mi>𝜕</mi><mi>𝑡</mi></mrow></mfrac></mrow></math>
 
 - unicodemath: 10
   mathml: |
@@ -2527,11 +2602,11 @@ tests:
 
 - unicodemath: 11+▭(⟡(1&1/2/3/4/5))
   mathml: |
-    <math display="block"><mrow><mn>1</mn><mo>+</mo><menclose notation="box"><mphantom><mfrac><mfrac><mfrac><mfrac><mn>1</mn><mn>2</mn></mfrac><mn>3</mn></mfrac><mn>4</mn></mfrac><mn>5</mn></mfrac></mphantom></menclose></mrow></math>
+    <math display="block"><mrow><mn>1</mn><mo>+</mo><menclose notation="box"><mpadded><mfrac><mfrac><mfrac><mfrac><mn>1</mn><mn>2</mn></mfrac><mn>3</mn></mfrac><mn>4</mn></mfrac><mn>5</mn></mfrac></mpadded></menclose></mrow></math>
 
 - unicodemath: 11+⟡(31&1/2/3/4/5)+1
   mathml: |
-    <math display="block"><mrow><mn>1</mn><mo>+</mo><mpadded width="0" height="1em" depth="0"><mphantom><mfrac><mfrac><mfrac><mfrac><mn>1</mn><mn>2</mn></mfrac><mn>3</mn></mfrac><mn>4</mn></mfrac><mn>5</mn></mfrac></mphantom></mpadded><mo>+</mo><mn>1</mn></mrow></math>
+    <math display="block"><mrow><mn>1</mn><mo>+</mo><mpadded width="0" height="0" depth="0"><mfrac><mfrac><mfrac><mfrac><mn>1</mn><mn>2</mn></mfrac><mn>3</mn></mfrac><mn>4</mn></mfrac><mn>5</mn></mfrac></mpadded><mo>+</mo><mn>1</mn></mrow></math>
 
 - unicodemath: 11, 15, 17/41, 2√3, -π, ...
   mathml: |
@@ -2555,19 +2630,19 @@ tests:
 
 - unicodemath: 11/2π ∫_0^2π▒ⅆθ/(a+b sinθ) = 1/√(a^2-b^2),
   mathml: |
-    <math display="block"><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mi>𝜋</mi></mrow></mfrac><mrow intent="integral(0,$h,$n)"><msubsup><mo>∫</mo><mn>0</mn><mrow arg="h"><mn>2</mn><mi>𝜋</mi></mrow></msubsup><mfrac arg="n"><mrow><mi intent="ⅆ">𝑑</mi><mi>𝜃</mi></mrow><mrow><mi>𝑎</mi><mo>+</mo><mi>𝑏</mi><mrow intent=":function"><mi>sin</mi><mo>&ApplyFunction;</mo><mi>𝜃</mi></mrow></mrow></mfrac></mrow><mo>=</mo><mfrac><mn>1</mn><msqrt><mrow><msup><mi>𝑎</mi><mn>2</mn></msup><mo>−</mo><msup><mi>𝑏</mi><mn>2</mn></msup></mrow></msqrt></mfrac><mo>,</mo></mrow></math>
+    <math display="block"><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mi>𝜋</mi></mrow></mfrac><mrow intent=":integral(0,$h,$n)"><msubsup><mo>∫</mo><mn>0</mn><mrow arg="h"><mn>2</mn><mi>𝜋</mi></mrow></msubsup><mfrac arg="n"><mrow><mi intent="ⅆ">𝑑</mi><mi>𝜃</mi></mrow><mrow><mi>𝑎</mi><mo>+</mo><mi>𝑏</mi><mrow intent=":function"><mi>sin</mi><mo>⁡</mo><mi>𝜃</mi></mrow></mrow></mfrac></mrow><mo>=</mo><mfrac><mn>1</mn><msqrt><mrow><msup><mi>𝑎</mi><mn>2</mn></msup><mo>−</mo><msup><mi>𝑏</mi><mn>2</mn></msup></mrow></msqrt></mfrac><mo>,</mo></mrow></math>
 
 - unicodemath: 11/2π ∫_0^2⬌π▒ⅆθ/(a+b sinθ) = 1/√(a^2-b^2).
   mathml: |
-    <math display="block"><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mi>𝜋</mi></mrow></mfrac><mrow intent="integral(0,$h,$n)"><msubsup><mo>∫</mo><mn>0</mn><mrow arg="h"><mn>2</mn><mpadded width="0"><mi>𝜋</mi></mpadded></mrow></msubsup><mfrac arg="n"><mrow><mi intent="ⅆ">𝑑</mi><mi>𝜃</mi></mrow><mrow><mi>𝑎</mi><mo>+</mo><mi>𝑏</mi><mrow intent=":function"><mi>sin</mi><mo>&ApplyFunction;</mo><mi>𝜃</mi></mrow></mrow></mfrac></mrow><mo>=</mo><mfrac><mn>1</mn><msqrt><mrow><msup><mi>𝑎</mi><mn>2</mn></msup><mo>−</mo><msup><mi>𝑏</mi><mn>2</mn></msup></mrow></msqrt></mfrac><mo>.</mo></mrow></math>
+    <math display="block"><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mi>𝜋</mi></mrow></mfrac><mrow intent=":integral(0,$h,$n)"><msubsup><mo>∫</mo><mn>0</mn><mrow arg="h"><mn>2</mn><mpadded width="0"><mi>𝜋</mi></mpadded></mrow></msubsup><mfrac arg="n"><mrow><mi intent="ⅆ">𝑑</mi><mi>𝜃</mi></mrow><mrow><mi>𝑎</mi><mo>+</mo><mi>𝑏</mi><mrow intent=":function"><mi>sin</mi><mo>⁡</mo><mi>𝜃</mi></mrow></mrow></mfrac></mrow><mo>=</mo><mfrac><mn>1</mn><msqrt><mrow><msup><mi>𝑎</mi><mn>2</mn></msup><mo>−</mo><msup><mi>𝑏</mi><mn>2</mn></msup></mrow></msqrt></mfrac><mo>.</mo></mrow></math>
 
 - unicodemath: 11/2𝜋 ∫_0^2𝜋▒ⅆ𝜃/(𝑎+𝑏 sin⁡𝜃)=1/√(𝑎^2−𝑏^2)
   mathml: |
-    <math display="block"><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mi>𝜋</mi></mrow></mfrac><mrow intent="integral(0,$h,$n)"><msubsup><mo>∫</mo><mn>0</mn><mrow arg="h"><mn>2</mn><mi>𝜋</mi></mrow></msubsup><mfrac arg="n"><mrow><mi intent="ⅆ">𝑑</mi><mi>𝜃</mi></mrow><mrow><mi>𝑎</mi><mo>+</mo><mi>𝑏</mi><mrow intent=":function"><mi>sin</mi><mo>&ApplyFunction;</mo><mi>𝜃</mi></mrow></mrow></mfrac></mrow><mo>=</mo><mfrac><mn>1</mn><msqrt><mrow><msup><mi>𝑎</mi><mn>2</mn></msup><mo>−</mo><msup><mi>𝑏</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mrow></math>
+    <math display="block"><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mi>𝜋</mi></mrow></mfrac><mrow intent=":integral(0,$h,$n)"><msubsup><mo>∫</mo><mn>0</mn><mrow arg="h"><mn>2</mn><mi>𝜋</mi></mrow></msubsup><mfrac arg="n"><mrow><mi intent="ⅆ">𝑑</mi><mi>𝜃</mi></mrow><mrow><mi>𝑎</mi><mo>+</mo><mi>𝑏</mi><mrow intent=":function"><mi>sin</mi><mo>⁡</mo><mi>𝜃</mi></mrow></mrow></mfrac></mrow><mo>=</mo><mfrac><mn>1</mn><msqrt><mrow><msup><mi>𝑎</mi><mn>2</mn></msup><mo>−</mo><msup><mi>𝑏</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mrow></math>
 
 - unicodemath: 11a+"Testing this!"-(1/2/3/4+1+1)+abc₂⁹/W_c+ab+√(e&1g)+▭(255&b)+∑_A▒a+1+∑┬a▒b
   mathml: |
-    <math display="block"><mrow><mrow><mn>1</mn><mi>𝑎</mi></mrow><mo>+</mo><mtext>Testing this!</mtext><mo>−</mo><mrow intent=":fenced"><mo>(</mo><mrow><mfrac><mfrac><mfrac><mn>1</mn><mn>2</mn></mfrac><mn>3</mn></mfrac><mn>4</mn></mfrac><mo>+</mo><mn>1</mn><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>+</mo><mfrac><mrow><mrow><mi>𝑎</mi><mi>𝑏</mi></mrow><msubsup><mi>𝑐</mi><mn>2</mn><mn>9</mn></msubsup></mrow><msub><mi>𝑊</mi><mi>𝑐</mi></msub></mfrac><mo>+</mo><mrow><mi>𝑎</mi><mi>𝑏</mi></mrow><mo>+</mo><mroot><mrow><mn>1</mn><mi>𝑔</mi></mrow><mi>𝑒</mi></mroot><mo>+</mo><menclose notation="updiagonalstrike downdiagonalstrike verticalstrike horizontalstrike"><mi>𝑏</mi></menclose><mo>+</mo><mrow intent="sum(𝐴,,$n)"><munder><mo>∑</mo><mi>𝐴</mi></munder><mrow arg="n"><mi>𝑎</mi></mrow></mrow><mo>+</mo><mn>1</mn><mo>+</mo><mrow intent="sum(𝑎,,$n)"><munder><mo>∑</mo><mi>𝑎</mi></munder><mrow arg="n"><mi>𝑏</mi></mrow></mrow></mrow></math>
+    <math display="block"><mrow><mrow><mn>1</mn><mi>𝑎</mi></mrow><mo>+</mo><mtext>Testing this!</mtext><mo>−</mo><mrow intent=":fenced"><mo>(</mo><mrow><mfrac><mfrac><mfrac><mn>1</mn><mn>2</mn></mfrac><mn>3</mn></mfrac><mn>4</mn></mfrac><mo>+</mo><mn>1</mn><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>+</mo><mfrac><mrow><mrow><mi>𝑎</mi><mi>𝑏</mi></mrow><msubsup><mi>𝑐</mi><mn>2</mn><mn>9</mn></msubsup></mrow><msub><mi>𝑊</mi><mi>𝑐</mi></msub></mfrac><mo>+</mo><mrow><mi>𝑎</mi><mi>𝑏</mi></mrow><mo>+</mo><mroot><mrow><mn>1</mn><mi>𝑔</mi></mrow><mi>𝑒</mi></mroot><mo>+</mo><menclose notation="updiagonalstrike downdiagonalstrike verticalstrike horizontalstrike"><mi>𝑏</mi></menclose><mo>+</mo><mrow intent=":sum(𝐴,,$n)"><munder><mo>∑</mo><mi>𝐴</mi></munder><mrow arg="n"><mi>𝑎</mi></mrow></mrow><mo>+</mo><mn>1</mn><mo>+</mo><mrow intent=":sum(𝑎,,$n)"><munder><mo>∑</mo><mi>𝑎</mi></munder><mrow arg="n"><mi>𝑏</mi></mrow></mrow></mrow></math>
 
 - unicodemath: 11⁄2
   mathml: |
@@ -2583,7 +2658,7 @@ tests:
 
 - unicodemath: 11⊘2
   mathml: |
-    <math display="block"><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></math>
+    <math display="block"><mfrac displaystyle="false"><mn>1</mn><mn>2</mn></mfrac></math>
 
 - unicodemath: 12¹⁶
   mathml: |
